@@ -1,0 +1,8 @@
+C:\Users\ILYA\Documents\GitHub\eb_vniifk\eb_vniifk\eb_vniifk\obj\x86\Debug\eb_vniifk.Form1.resources
+C:\Users\ILYA\Documents\GitHub\eb_vniifk\eb_vniifk\eb_vniifk\obj\x86\Debug\eb_vniifk.Properties.Resources.resources
+C:\Users\ILYA\Documents\GitHub\eb_vniifk\eb_vniifk\eb_vniifk\obj\x86\Debug\eb_vniifk.csproj.GenerateResource.Cache
+C:\Users\ILYA\Documents\GitHub\eb_vniifk\eb_vniifk\eb_vniifk\bin\Debug\eb_vniifk.exe
+C:\Users\ILYA\Documents\GitHub\eb_vniifk\eb_vniifk\eb_vniifk\bin\Debug\eb_vniifk.pdb
+C:\Users\ILYA\Documents\GitHub\eb_vniifk\eb_vniifk\eb_vniifk\obj\x86\Debug\eb_vniifk.exe
+C:\Users\ILYA\Documents\GitHub\eb_vniifk\eb_vniifk\eb_vniifk\obj\x86\Debug\eb_vniifk.pdb
+C:\Users\ILYA\Documents\GitHub\eb_vniifk\eb_vniifk\eb_vniifk\obj\x86\Debug\eb_vniifk.csprojResolveAssemblyReference.cache
