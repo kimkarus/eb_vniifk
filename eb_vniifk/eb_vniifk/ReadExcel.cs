@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.Data;
 using System.Linq;
-using Microsoft.Office.Interop;
-using _Excel = Microsoft.Office.Interop.Excel;
 using System.Xml;
 using System.IO;
 using System.Data.OleDb;
@@ -21,10 +19,6 @@ namespace eb_vniifk
         private string path = "";
         private string test = "";
         private DataTable internalTable;
-        private _Excel.Application xlApp; //приложение ексель
-        private _Excel.Workbook xlWorkBook; //книга
-        private _Excel.Worksheet xlWorkSheet; //лист
-        private _Excel.Range xlRange; // ячейка
         private object misValue = System.Reflection.Missing.Value;
         private DataRow row;
         private Files Files;
@@ -32,142 +26,65 @@ namespace eb_vniifk
         {
             path = _path;
             Files = new eb_vniifk.Files();
-            OpenXlApp();
-            xlApp.Visible = true;
             //TakeIntervalFromExcel(path);
             TakeIntervalOleDb(path);
+            //readExcel(path);
             test = "1";
 
         }
-        private void OpenXlApp()
+        private void readExcel(string path)
         {
-            xlApp = new _Excel.Application();
-        }
-        private void TakeIntervalFromExcel(string path)
-        {
-            string sheet = "";
-            //xlWorkBook = xlApp.Workbooks;
-            if (xlWorkBook == null || path.Length > 0)
+            //C:\Users\Ilya\Google Диск\Projects\ВНИИФК\Загрузчик в ЭБ\Тест2.xls
+            string connectionString = @"provider = Microsoft.ACE.OLEDB.12.0; 
+                            data source = C:\Users\Ilya\Google Диск\Projects\ВНИИФК\Загрузчик в ЭБ\Тест2.xls; 
+                            Extended Properties = 'Excel 12.0'";
+           // connectionString = Files.connectionString(path);
+            OleDbConnection oleDbConnection = new OleDbConnection(connectionString);
+            try
             {
-                try
-                {
-                    //xlWorkBook = xlApp.Workbooks.Open(path, 0, false, 5, "", "", true, Microsoft.Office.Interop.Excel.XlPlatform.xlWindows, "", true, false, 0, true, false, false);
-                    xlWorkBook = xlApp.Workbooks.Open(path, 0, true, 5, "", "", true, Microsoft.Office.Interop.Excel.XlPlatform.xlWindows, "\t", false, false, 0, true, 1, 0);
-                    
+                oleDbConnection.Open();
+                //MessageBox.Show("Connection Successful");
+                string err3 = "good";
+            }
+            catch (System.Exception err)
+            {
+                string err2 = err.ToString();
+                //MessageBox.Show("Connection failed");
 
-                    //xlWorkBook = xlApp.Workbooks.Open(path);
-                }
-                catch (System.Exception ex)
-                {
-                    test = "2";
-                }
             }
         }
-        private void OpenExcelSheet(string sheet = "", int l = -1, string path = "")
+      private void TakeIntervalOleDb(string path, string sheet = "")
         {
+            //path = path.Replace("\\", @"\");
+            string connectionString = Files.connectionString(path);
+            OleDbConnection oleDbConnection = new OleDbConnection(connectionString);
+            oleDbConnection.Open();
+            string err3 = "good";
+            //DataTable dt = new DataTable();
+            //Files.ExcelOleDbConn = new OleDbConnection(Files.connectionString(path));
+            //Files.ExcelOleDbConn.Open();
+            //Files.ExcelAdapter = new OleDbDataAdapter("Select * from [" + sheet + "];", Files.ExcelOleDbConn);
+            //OleDbCommand comm = new OleDbCommand();
+            //comm.CommandText = "Select * from [Лист1$]";
+            //comm.Connection = Files.ExcelOleDbConn;
+            //Files.ExcelAdapter = new OleDbDataAdapter("Select * from [Лист1]", Files.ExcelOleDbConn);
+            //Files.ExcelAdapter.SelectCommand = comm;
+            //Files.ExcelAdapter.Fill(dt);
+
+
+            //Files.ExcelOleDbConn.Close();
+            //internalTable = null;
+            //internalTable = new DataTable();
             //try
             //{
+            //    Files.ExcelAdapter.Fill(internalTable);
+            //}
+            //catch (System.Exception err)
+            //{
+            //}
+        }
 
-            int error = 0;
-            if (xlWorkBook == null) TakeIntervalFromExcel(path);
 
-            try
-            {
-                for (int i = 0; i < xlWorkBook.Worksheets.Count; i++)
-                {
-                    int index = i + 1;
-                    _Excel.Worksheet testSheet = (_Excel.Worksheet)xlWorkBook.Worksheets[index];
-                    if (sheet == testSheet.Name) l = index;
-                }
-                if (l > 0)
-                {
-                    xlWorkSheet = (_Excel.Worksheet)xlWorkBook.Worksheets[l];
-                }
-            }
-            catch (System.Exception err)
-            {
-                error = 1;
-            }
-            if (error <= 0)
-            {
-                //xlWorkSheet = (Excel.Worksheet)xlWorkBook.Worksheets[@strExcelTable];
-                try
-                {
-                    xlRange = xlWorkSheet.UsedRange;
-                }
-                catch (System.Exception ex)
-                {
-                    error = 1;
-                    return;
-                }
-                if (xlRange != null || xlRange.Rows.Count > 1)
-                {
-                    internalTable = new DataTable();
-                    object[,] valueArray = (object[,])xlRange.get_Value(_Excel.XlRangeValueDataType.xlRangeValueDefault);
-                    for (int j = 0; j < xlRange.Columns.Count; j++)
-                    {
-                        internalTable.Columns.Add((j + 1).ToString(), typeof(string));
-                    }
-                    for (int i = 0; i < xlRange.Rows.Count; i++)
-                    {
-                        row = internalTable.NewRow();
-                        for (int j = 0; j < xlRange.Columns.Count; j++)
-                        {
-                            if (valueArray != null && valueArray.GetValue(i + 1, j + 1) != null)
-                            {
-                                row[j] = valueArray.GetValue(i + 1, j + 1).ToString();
-                            }
-                        }
-                        internalTable.Rows.Add(row);
-                    }
-                }
-            }
-        }
-        private void TakeIntervalOleDb(string path, string sheet = "")
-        {
-            Files.ExcelOleDbConn = new OleDbConnection(Files.connectionString(path));
-            Files.ExcelOleDbConn.Open();
-            Files.ExcelAdapter = new OleDbDataAdapter("Select * from [" + sheet + "];", Files.ExcelOleDbConn);
-            Files.ExcelOleDbConn.Close();
-            internalTable = null;
-            internalTable = new DataTable();
-            try
-            {
-                Files.ExcelAdapter.Fill(internalTable);
-            }
-            catch (System.Exception err)
-            {
-            }
-        }
-        private void CloseExcelBook()
-        {
-            try
-            {
-                xlWorkBook.Close(true, misValue, misValue);
-                releaseObject(xlWorkSheet);
-                releaseObject(xlWorkBook);
-            }
-            catch (System.Exception err)
-            {
-            }
-        }
-        private void CloseExcelAppl()
-        {
-            /*
-             * Метод для завершения работы с файлом и его закрытие
-             * */
-            try
-            {
-                xlWorkBook.Close(true, misValue, misValue);
-                xlApp.Quit();
-                releaseObject(xlWorkSheet);
-                releaseObject(xlWorkBook);
-                releaseObject(xlApp);
-            }
-            catch (System.Exception err)
-            {
-            }
-        }
         private void releaseObject(object obj)
         {
             try
@@ -198,10 +115,11 @@ namespace eb_vniifk
          * */
         //провайдер
         private string strConnectionProv8 = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=";
-        private string strConnectionProv12 = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=";
+        private string strConnectionProv12 = @"provider = Microsoft.ACE.OLEDB.12.0; data source = ";
         //тип соединения
         private string strConnectionType8 = ";Extended Properties='Excel 8.0'";
-        private string strConnectionType12 = ";OLE DB Services=-1;Extended Properties='Excel 12.0 xml;HDR=YES;IMEX=1;MAXSCANROWS=0'";
+        //private string strConnectionType12 = ";Extended Properties='Excel 12.0 xml;HDR=YES;IMEX=1;MAXSCANROWS=0'";
+        private string strConnectionType12 = "; Extended Properties = 'Excel 12.0'";
         private string ll = "";
         private string ll1 = ";HDR=NO;IMEX=0";
         private string ll2 = ";HDR=Yes;IMEX=1";
@@ -238,7 +156,20 @@ namespace eb_vniifk
             /*
              * Эта фунция возвращает строку подключения к екселю.
              * */
-            string connect = @strConnectionProv8 + path + strConnectionType8;
+            string connect = "";
+            string extension = Path.GetExtension(path);
+            if(extension.IndexOf("xls") > 0)
+            {
+                connect = strConnectionProv8 + path + strConnectionType8;
+            }
+            if (extension.IndexOf("xlsx") > 0)
+            {
+                connect = strConnectionProv12 + path + strConnectionType12;
+            }
+            connect = strConnectionProv12 + path + strConnectionType12;
+            connect = @"provider = Microsoft.ACE.OLEDB.12.0; 
+                            data source = C:\Users\Ilya\Google Диск\Projects\ВНИИФК\Загрузчик в ЭБ\Тест2.xls; 
+                            Extended Properties = 'Excel 12.0'";
             return connect;
         }
 
