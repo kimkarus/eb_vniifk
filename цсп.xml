@@ -12,25 +12,16 @@
 <Dprtm_kpp>770401001</Dprtm_kpp>
 <Srvc_records>
 <Srvc_record>
-<RegNumber>801011О.99.0.БВ24БУ38000</RegNumber>
+<RegNumber></RegNumber>
 <Vlm_indctr_records>
 <Vlm_indctr_record>
-<Vlm_indctr_code>001</Vlm_indctr_code>
-<Vlm_indctr_name>Численность обучающихся</Vlm_indctr_name>
-<Vlm_indctr_name_1>Человек</Vlm_indctr_name_1>
-<Value_1>69</Value_1>
-<Value_2>69</Value_2>
-<Value_3>69</Value_3>
-<Kbk_code>0740706021010059061112</Kbk_code>
-</Vlm_indctr_record>
-<Vlm_indctr_record>
-<Vlm_indctr_code>001</Vlm_indctr_code>
-<Vlm_indctr_name>Численность обучающихся</Vlm_indctr_name>
-<Vlm_indctr_name_1>Человек</Vlm_indctr_name_1>
-<Value_1>69</Value_1>
-<Value_2>69</Value_2>
-<Value_3>69</Value_3>
-<Kbk_code>0740706021010059061112</Kbk_code>
+<Vlm_indctr_code></Vlm_indctr_code>
+<Vlm_indctr_name></Vlm_indctr_name>
+<Vlm_indctr_name_1></Vlm_indctr_name_1>
+<Value_1></Value_1>
+<Value_2></Value_2>
+<Value_3></Value_3>
+<Kbk_code></Kbk_code>
 </Vlm_indctr_record>
 </Vlm_indctr_records>
 </Srvc_record>
@@ -54,25 +45,6 @@
 </Si_taxes_record>
 </Nsi_taxes_records>
 <Alignmt_coeff_records>
-<Alignmt_coeff_record>
-<Kbk_code>0740706021010059061112</Kbk_code>
-<Not_Mltr_Pmnt val_1="10" val_2="10" val_3="10"/>
-<Mltr_Pmnt val_1="10" val_2="10" val_3="10"/>
-<Dpndt_Pmnt val_1="10" val_2="10" val_3="10"/>
-<Insrns_Pmnt val_1="10" val_2="10" val_3="10"/>
-<Othr_Pmnt val_1="10" val_2="10" val_3="10"/>
-<Mz val_1="10" val_2="10" val_3="10"/>
-<Gsm val_1="10" val_2="10" val_3="10"/>
-<Fr val_1="10" val_2="10" val_3="10"/>
-<Inz val_1="10" val_2="10" val_3="10"/>
-<Ku val_1="10" val_2="10" val_3="10"/>
-<Sni val_1="10" val_2="10" val_3="10"/>
-<Socdi val_1="10" val_2="10" val_3="10"/>
-<Rpv val_1="10" val_2="10" val_3="10"/>
-<Us val_1="10" val_2="10" val_3="10"/>
-<Tu val_1="10" val_2="10" val_3="10"/>
-<Pnz val_1="10" val_2="10" val_3="10"/>
-</Alignmt_coeff_record>
 <Alignmt_coeff_record>
 <Kbk_code>0740706021010059061112</Kbk_code>
 <Not_Mltr_Pmnt val_1="10" val_2="10" val_3="10"/>
