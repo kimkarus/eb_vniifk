@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<BNZ_INF_OIV>
+<Base_code>111330</Base_code>
+<Base_name> Реализация основных общеобразовательных программ дошкольного образования </Base_name>
+<Volume_indicator_code>001</Volume_indicator_code>
+<Volume_indicator_name>Численность обучающихся</Volume_indicator_name>
+<Volume_indicator_okei_code>792</Volume_indicator_okei_code>
+<Volume_indicator_okei_name>Человек</Volume_indicator_okei_name>
+<EffectiveFrom>01.01.2014</EffectiveFrom>
+<EffectiveBefore>31.12.2099</EffectiveBefore>
+<Inst_code_oiv>7703771271770901001</inst_code_oiv>
+<Inst_name_oiv>Министерство образования и науки Российской Федерации</inst_name_oiv>
+<Inst_inn>7703771271</inst_inn>
+<Inst_kpp>770901001</inst_kpp>
+<Bnz_values>
+<Not_Mltr_Pmnt_Ot1 bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Mltr_Pmnt_Ot1 bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Dpndt_Pmnt_Ot1 bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Insrns_Pmnt_Ot1 bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Othr_Pmnt_Ot1 bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Mz_bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Gsm bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Fr bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Inz bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Ku bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Sni bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Socdi bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Rpv bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Us bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Tu bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Not_Mltr_Pmnt_Ot2 bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Mltr_Pmnt_Ot2 bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Dpndt_Pmnt_Ot2 bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Insrns_Pmnt_Ot2 bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Othr_Pmnt_Ot2 bnz_1="100" bnz_2="100" bnz_3="100"/>
+<Pnz bnz_1="100" bnz_2="100" bnz_3="100"/>
+</Bnz_values>
+<Registry_records>
+<Registry_record>
+<RegNumber>801011О.99.0.БВ24БУ38000</RegNumber>
+<Bnz_coeff_values>
+<Not_Mltr_Pmnt_Ot1 bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Mltr_Pmnt_Ot1 bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Dpndt_Pmnt_Ot1 bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Insrns_Pmnt_Ot1 bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Othr_Pmnt_Ot1 bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Mz bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Gsm bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Fr bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Inz bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Ku bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Sni bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Socdi bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Rpv bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Us bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Tu bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Not_Mltr_Pmnt_Ot2 bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Mltr_Pmnt_Ot2 bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Dpndt_Pmnt_Ot2 bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Insrns_Pmnt_Ot2 bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Othr_Pmnt_Ot2 bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+<Pnz bnz_coeff_1="100" bnz_coeff_2="100" bnz_coeff_3="100"/>
+</Bnz_coeff_values>
+<Bnz_avrg_pmnt>
+<Not_Mltr_Pmnt_Ot1 bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Mltr_Pmnt_Ot1 bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Dpndt_Pmnt_Ot1 bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Insrns_Pmnt_Ot1 bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Othr_Pmnt_Ot1 bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Mz bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Gsm bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Fr bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Inz bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Ku bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Sni bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Socdi bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Rpv bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Us bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Tu bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Not_Mltr_Pmnt_Ot2 bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Mltr_Pmnt_Ot2 bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Dpndt_Pmnt_Ot2 bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Insrns_Pmnt_Ot2 bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Othr_Pmnt_Ot2 bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+<Pnz bnz_avrg_1="100" bnz_avrg_2="100" bnz_avrg_3="100"/>
+</Bnz_avrg_pmnt>
+</Registry_record>
+</Registry_records>
+</BNZ_INF_OIV>
