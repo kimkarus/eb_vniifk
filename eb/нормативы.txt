@@ -9,6 +9,8 @@
 <EffectiveFrom>01.01.2014</EffectiveFrom>
 <EffectiveBefore>31.12.2099</EffectiveBefore>
 <Inst_code_oiv>7703771271770901001</inst_code_oiv>
+<Inst_code_oiv>7771103132019005961112</inst_code_oiv>
+
 <Inst_name_oiv>Министерство образования и науки Российской Федерации</inst_name_oiv>
 <Inst_inn>7703771271</inst_inn>
 <Inst_kpp>770901001</inst_kpp>
