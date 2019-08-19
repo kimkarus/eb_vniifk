@@ -34,110 +34,110 @@ Sub SetSheetHeadsXML(ws_xml As Worksheet)
     'ws_xml.Range("E2:G2").Value = ws.Range("D8:F8").Value
     'KBK 1
     ws_xml.Range("A1").Value = "Kbk_code"
-    'B - Наименование услуги
-    ws_xml.Range("B1").Value = "Наименование_услуги"
-    'C - Наименование организации
-    ws_xml.Range("C1").Value = "Наименование организации"
-    'D - ИНН
+    'B - РќР°РёРјРµРЅРѕРІР°РЅРёРµ СѓСЃР»СѓРіРё
+    ws_xml.Range("B1").Value = "РќР°РёРјРµРЅРѕРІР°РЅРёРµ_СѓСЃР»СѓРіРё"
+    'C - РќР°РёРјРµРЅРѕРІР°РЅРёРµ РѕСЂРіР°РЅРёР·Р°С†РёРё
+    ws_xml.Range("C1").Value = "РќР°РёРјРµРЅРѕРІР°РЅРёРµ РѕСЂРіР°РЅРёР·Р°С†РёРё"
+    'D - РРќРќ
     ws_xml.Range("D1").Value = "Inn"
-    'E - год1
+    'E - РіРѕРґ1
     ws_xml.Range("E1").Value = "Value1"
-    'E - год2
+    'E - РіРѕРґ2
     ws_xml.Range("F1").Value = "Value2"
-    'E - год3
+    'E - РіРѕРґ3
     ws_xml.Range("G1").Value = "Value3"
-    'CB - КПП
+    'CB - РљРџРџ
     ws_xml.Range("CB1").Value = "Kpp"
-    'CC - Регистровый номер услуги
+    'CC - Р РµРіРёСЃС‚СЂРѕРІС‹Р№ РЅРѕРјРµСЂ СѓСЃР»СѓРіРё
     ws_xml.Range("CC1").Value = "RegNumber"
-    'CD - Наименование индикатора
-    ws_xml.Range("CD1").Value = "Наименование_индикатора"
-    'CE - Единица измерения
-    ws_xml.Range("CE1").Value = "Единица_измерения"
-    'CF - Код услуги
-    ws_xml.Range("CF1").Value = "Код_услуги"
-    'CG - Код ед. изм
-    ws_xml.Range("CG1").Value = "Код ед. изм"
-    'CH - Код индикатора
-    ws_xml.Range("CH1").Value = "Код_индикатора"
-    'CI - Дата начала услуги
-    ws_xml.Range("CI1").Value = "Начало"
-    'CJ - Дата окончания услуги
-    ws_xml.Range("CJ1").Value = "Конец"
+    'CD - РќР°РёРјРµРЅРѕРІР°РЅРёРµ РёРЅРґРёРєР°С‚РѕСЂР°
+    ws_xml.Range("CD1").Value = "РќР°РёРјРµРЅРѕРІР°РЅРёРµ_РёРЅРґРёРєР°С‚РѕСЂР°"
+    'CE - Р•РґРёРЅРёС†Р° РёР·РјРµСЂРµРЅРёСЏ
+    ws_xml.Range("CE1").Value = "Р•РґРёРЅРёС†Р°_РёР·РјРµСЂРµРЅРёСЏ"
+    'CF - РљРѕРґ СѓСЃР»СѓРіРё
+    ws_xml.Range("CF1").Value = "РљРѕРґ_СѓСЃР»СѓРіРё"
+    'CG - РљРѕРґ РµРґ. РёР·Рј
+    ws_xml.Range("CG1").Value = "РљРѕРґ РµРґ. РёР·Рј"
+    'CH - РљРѕРґ РёРЅРґРёРєР°С‚РѕСЂР°
+    ws_xml.Range("CH1").Value = "РљРѕРґ_РёРЅРґРёРєР°С‚РѕСЂР°"
+    'CI - Р”Р°С‚Р° РЅР°С‡Р°Р»Р° СѓСЃР»СѓРіРё
+    ws_xml.Range("CI1").Value = "РќР°С‡Р°Р»Рѕ"
+    'CJ - Р”Р°С‚Р° РѕРєРѕРЅС‡Р°РЅРёСЏ СѓСЃР»СѓРіРё
+    ws_xml.Range("CJ1").Value = "РљРѕРЅРµС†"
     '1
-    'G - ОТ1 - H = 7
+    'G - РћРў1 - H = 7
     ws_xml.Range("H1").Value = "Insrns_Pmnt_val_1"
-    'H - МЗ - I = 8
+    'H - РњР— - I = 8
     ws_xml.Range("I1").Value = "Mz_val_1"
-    'I - ФР1 - J = 9
+    'I - Р¤Р 1 - J = 9
     ws_xml.Range("J1").Value = "Fr_val_1"
-    'J - ИНЗ - K = 10
+    'J - РРќР— - K = 10
     ws_xml.Range("K1").Value = "Inz_val_1"
-    'K - КУ - L = 11
+    'K - РљРЈ - L = 11
     ws_xml.Range("L1").Value = "Ku_val_1"
-    'L - СНИ - M = 12
+    'L - РЎРќР - M = 12
     ws_xml.Range("M1").Value = "Sni_val_1"
-    'M - СОЦДИ - N = 13
+    'M - РЎРћР¦Р”Р - N = 13
     ws_xml.Range("N1").Value = "Socdi_val_1"
-    'N - ФР2 - O = 14
+    'N - Р¤Р 2 - O = 14
     ws_xml.Range("O1").Value = "Fr2_val_1"
-    'O - УС - P = 15
+    'O - РЈРЎ - P = 15
     ws_xml.Range("P1").Value = "Us_val_1"
-    'P - ТУ - Q = 16
+    'P - РўРЈ - Q = 16
     ws_xml.Range("Q1").Value = "Tu_val_1"
-    'Q - ОТ2 - R = 17
+    'Q - РћРў2 - R = 17
     ws_xml.Range("R1").Value = "Othr_Pmnt_val_1"
-    'R - ПНЗ - S = 18
+    'R - РџРќР— - S = 18
     ws_xml.Range("S1").Value = "Pnz_val_1"
     '2
-    'G - ОТ1 - T = 19
+    'G - РћРў1 - T = 19
     ws_xml.Range("T1").Value = "Insrns_Pmnt_val_2"
-    'H - МЗ - U = 20
+    'H - РњР— - U = 20
     ws_xml.Range("U1").Value = "Mz_val_2"
-    'I - ФР1 - V = 21
+    'I - Р¤Р 1 - V = 21
      ws_xml.Range("V1").Value = "Fr_val_2"
-    'J - ИНЗ - W = 22
+    'J - РРќР— - W = 22
     ws_xml.Range("W1").Value = "Inz_val_2"
-    'K - КУ - X = 23
+    'K - РљРЈ - X = 23
     ws_xml.Range("X1").Value = "Ku_val_2"
-    'L - СНИ - Y = 24
+    'L - РЎРќР - Y = 24
     ws_xml.Range("Y1").Value = "Sni_val_2"
-    'M - СОЦДИ - Z = 25
+    'M - РЎРћР¦Р”Р - Z = 25
     ws_xml.Range("Z1").Value = "Socdi_val_2"
-    'N - ФР2 - AA = 26
+    'N - Р¤Р 2 - AA = 26
     ws_xml.Range("AA1").Value = "Fr2_val_2"
-    'O - УС - AB = 27
+    'O - РЈРЎ - AB = 27
     ws_xml.Range("AB1").Value = "Us_val_2"
-    'P - ТУ - AC = 28
+    'P - РўРЈ - AC = 28
     ws_xml.Range("AC1").Value = "Tu_val_2"
-    'Q - ОТ2 - AD = 29
+    'Q - РћРў2 - AD = 29
     ws_xml.Range("AD1").Value = "Othr_Pmnt_val_2"
-    'R - ПНЗ - AE = 30
+    'R - РџРќР— - AE = 30
     ws_xml.Range("AE1").Value = "Pnz_val_2"
     '3
-    'G - ОТ1 - AF = 31
+    'G - РћРў1 - AF = 31
     ws_xml.Range("AF1").Value = "Insrns_Pmnt_val_3"
-    'H - МЗ - AG = 32
+    'H - РњР— - AG = 32
     ws_xml.Range("AG1").Value = "Mz_val_3"
-    'I - ФР1 - AH = 33
+    'I - Р¤Р 1 - AH = 33
     ws_xml.Range("AH1").Value = "Fr_val_3"
-    'J - ИНЗ - AI = 34
+    'J - РРќР— - AI = 34
     ws_xml.Range("AI1").Value = "Inz_val_3"
-    'K - КУ - AJ = 35
+    'K - РљРЈ - AJ = 35
     ws_xml.Range("AJ1").Value = "Ku_val_3"
-    'L - СНИ - AK = 36
+    'L - РЎРќР - AK = 36
     ws_xml.Range("AK1").Value = "Sni_val_3"
-    'M - СОЦДИ - AL = 37
+    'M - РЎРћР¦Р”Р - AL = 37
     ws_xml.Range("AL1").Value = "Socdi_val_3"
-    'N - ФР2 - AM = 38
+    'N - Р¤Р 2 - AM = 38
     ws_xml.Range("AM1").Value = "Fr2_val_3"
-    'O - УС - AN = 39
+    'O - РЈРЎ - AN = 39
     ws_xml.Range("AN1").Value = "Us_val_3"
-    'P - ТУ - AO = 40
+    'P - РўРЈ - AO = 40
     ws_xml.Range("AO1").Value = "Tu_val_3"
-    'Q - ОТ2 - AP = 41
+    'Q - РћРў2 - AP = 41
     ws_xml.Range("AP1").Value = "Othr_Pmnt_val_3"
-    'R - ПНЗ - AQ = 42
+    'R - РџРќР— - AQ = 42
     ws_xml.Range("AQ1").Value = "Pnz_val_3"
     'NAME
     'ws_xml.Range("B2").Value = ws.Range("A7").Value
@@ -204,8 +204,8 @@ Sub FillXMLTableForCSP(nameSheet As String, wb As Workbook, ws_xml As Worksheet)
     '   AR:BC = Plan Values1 - G:R
     '   BD:BO = Plan Values2 - G:R
     '   BP:CA = Plan Values3 - G:R
-    'Обеспечение участия сборных команд Российской федерации в международных спортивных соревнованиях, Олимпийских играх.
-    'На территории Российской Федерации
+    'РћР±РµСЃРїРµС‡РµРЅРёРµ СѓС‡Р°СЃС‚РёСЏ СЃР±РѕСЂРЅС‹С… РєРѕРјР°РЅРґ Р РѕСЃСЃРёР№СЃРєРѕР№ С„РµРґРµСЂР°С†РёРё РІ РјРµР¶РґСѓРЅР°СЂРѕРґРЅС‹С… СЃРїРѕСЂС‚РёРІРЅС‹С… СЃРѕСЂРµРІРЅРѕРІР°РЅРёСЏС…, РћР»РёРјРїРёР№СЃРєРёС… РёРіСЂР°С….
+    'РќР° С‚РµСЂСЂРёС‚РѕСЂРёРё Р РѕСЃСЃРёР№СЃРєРѕР№ Р¤РµРґРµСЂР°С†РёРё
     '1
     'Plan
     ws_xml.Range("AR2:BC2").Value = ws.Range("G7:R7").Value
@@ -243,8 +243,8 @@ Sub FillXMLTableForCSP(nameSheet As String, wb As Workbook, ws_xml As Worksheet)
     ws_xml.Range("B3").Value = ws.Range("A7").Value
     'RegNumber
     ws_xml.Range("CC2").Value = ws.Range("V7").Value
-    'Обеспечение участия сборных команд Российской федерации в международных спортивных соревнованиях, Олимпийских играх.
-    'За пределами территории Российской Федерации
+    'РћР±РµСЃРїРµС‡РµРЅРёРµ СѓС‡Р°СЃС‚РёСЏ СЃР±РѕСЂРЅС‹С… РєРѕРјР°РЅРґ Р РѕСЃСЃРёР№СЃРєРѕР№ С„РµРґРµСЂР°С†РёРё РІ РјРµР¶РґСѓРЅР°СЂРѕРґРЅС‹С… СЃРїРѕСЂС‚РёРІРЅС‹С… СЃРѕСЂРµРІРЅРѕРІР°РЅРёСЏС…, РћР»РёРјРїРёР№СЃРєРёС… РёРіСЂР°С….
+    'Р—Р° РїСЂРµРґРµР»Р°РјРё С‚РµСЂСЂРёС‚РѕСЂРёРё Р РѕСЃСЃРёР№СЃРєРѕР№ Р¤РµРґРµСЂР°С†РёРё
     '1
     'Plan
     ws_xml.Range("AR4:BC4").Value = ws.Range("G14:R14").Value
@@ -281,8 +281,8 @@ Sub FillXMLTableForCSP(nameSheet As String, wb As Workbook, ws_xml As Worksheet)
     ws_xml.Range("A5").Value = ws.Range("A49").Value
     'NAME
     ws_xml.Range("B5").Value = ws.Range("A7").Value
-    'Организация и проведение официальных спортивных мероприятий.
-    'Международные, на территории Российской Федерации
+    'РћСЂРіР°РЅРёР·Р°С†РёСЏ Рё РїСЂРѕРІРµРґРµРЅРёРµ РѕС„РёС†РёР°Р»СЊРЅС‹С… СЃРїРѕСЂС‚РёРІРЅС‹С… РјРµСЂРѕРїСЂРёСЏС‚РёР№.
+    'РњРµР¶РґСѓРЅР°СЂРѕРґРЅС‹Рµ, РЅР° С‚РµСЂСЂРёС‚РѕСЂРёРё Р РѕСЃСЃРёР№СЃРєРѕР№ Р¤РµРґРµСЂР°С†РёРё
     '1
     'Plan
     ws_xml.Range("AR6:BC6").Value = ws.Range("G23:R23").Value
@@ -300,7 +300,7 @@ Sub FillXMLTableForCSP(nameSheet As String, wb As Workbook, ws_xml As Worksheet)
     ws_xml.Range("A6").Value = ws.Range("A49").Value
     'NAME
     ws_xml.Range("B6").Value = ws.Range("A23").Value
-    'Всероссийские, на территории Российской Федерации
+    'Р’СЃРµСЂРѕСЃСЃРёР№СЃРєРёРµ, РЅР° С‚РµСЂСЂРёС‚РѕСЂРёРё Р РѕСЃСЃРёР№СЃРєРѕР№ Р¤РµРґРµСЂР°С†РёРё
     '2
     'Plan
     ws_xml.Range("AR7:BC7").Value = ws.Range("G25:R25").Value
@@ -318,7 +318,7 @@ Sub FillXMLTableForCSP(nameSheet As String, wb As Workbook, ws_xml As Worksheet)
     ws_xml.Range("A7").Value = ws.Range("A49").Value
     'NAME
     ws_xml.Range("B7").Value = ws.Range("A23").Value
-    'Организация мероприятий по подготовке спортивных сборных команд.
+    'РћСЂРіР°РЅРёР·Р°С†РёСЏ РјРµСЂРѕРїСЂРёСЏС‚РёР№ РїРѕ РїРѕРґРіРѕС‚РѕРІРєРµ СЃРїРѕСЂС‚РёРІРЅС‹С… СЃР±РѕСЂРЅС‹С… РєРѕРјР°РЅРґ.
     '
     '1
     'Plan
@@ -424,7 +424,7 @@ Sub FillXMLTableForCSP(nameSheet As String, wb As Workbook, ws_xml As Worksheet)
     ws_xml.Range("A13").Value = ws.Range("A49").Value
     'NAME
     ws_xml.Range("B13").Value = ws.Range("A28").Value
-    'Организация мероприятий по научно-методическому обеспечению спортивных сборных команд.
+    'РћСЂРіР°РЅРёР·Р°С†РёСЏ РјРµСЂРѕРїСЂРёСЏС‚РёР№ РїРѕ РЅР°СѓС‡РЅРѕ-РјРµС‚РѕРґРёС‡РµСЃРєРѕРјСѓ РѕР±РµСЃРїРµС‡РµРЅРёСЋ СЃРїРѕСЂС‚РёРІРЅС‹С… СЃР±РѕСЂРЅС‹С… РєРѕРјР°РЅРґ.
     '0000000001100077708  30042100100000000004100103
     '1
     'Plan
@@ -443,7 +443,7 @@ Sub FillXMLTableForCSP(nameSheet As String, wb As Workbook, ws_xml As Worksheet)
     ws_xml.Range("A14").Value = ws.Range("A61").Value
     'NAME
     ws_xml.Range("B14").Value = ws.Range("A59").Value
-    'заполняем реквезиты 12 строк
+    'Р·Р°РїРѕР»РЅСЏРµРј СЂРµРєРІРµР·РёС‚С‹ 12 СЃС‚СЂРѕРє
     Call FillXMLTableFromServiceTable(wb, ws_xml, ws, 2, 14)
     
 End Sub
@@ -458,8 +458,8 @@ Sub FillXMLTableForUSM(nameSheet As String, wb As Workbook, ws_xml As Worksheet)
     '   AR:BC = Plan Values1 - G:R
     '   BD:BO = Plan Values2 - G:R
     '   BP:CA = Plan Values3 - G:R
-    'Организация и проведение официальных физкультурных (физкультурно-оздоровительных) мероприятий.
-    'Международные на территории Российской Федерации
+    'РћСЂРіР°РЅРёР·Р°С†РёСЏ Рё РїСЂРѕРІРµРґРµРЅРёРµ РѕС„РёС†РёР°Р»СЊРЅС‹С… С„РёР·РєСѓР»СЊС‚СѓСЂРЅС‹С… (С„РёР·РєСѓР»СЊС‚СѓСЂРЅРѕ-РѕР·РґРѕСЂРѕРІРёС‚РµР»СЊРЅС‹С…) РјРµСЂРѕРїСЂРёСЏС‚РёР№.
+    'РњРµР¶РґСѓРЅР°СЂРѕРґРЅС‹Рµ РЅР° С‚РµСЂСЂРёС‚РѕСЂРёРё Р РѕСЃСЃРёР№СЃРєРѕР№ Р¤РµРґРµСЂР°С†РёРё
     '1
     'Plan
     ws_xml.Range("AR15:BC15").Value = ws.Range("G7:R7").Value
@@ -544,7 +544,7 @@ Sub FillXMLTableForUSM(nameSheet As String, wb As Workbook, ws_xml As Worksheet)
     'NAME
     ws_xml.Range("B18").Value = ws.Range("A7").Value
     
-    'Работа 2. Организация и проведение официальных спортивных мероприятий.
+    'Р Р°Р±РѕС‚Р° 2. РћСЂРіР°РЅРёР·Р°С†РёСЏ Рё РїСЂРѕРІРµРґРµРЅРёРµ РѕС„РёС†РёР°Р»СЊРЅС‹С… СЃРїРѕСЂС‚РёРІРЅС‹С… РјРµСЂРѕРїСЂРёСЏС‚РёР№.
     '
     '1
     'Plan
@@ -567,7 +567,7 @@ Sub FillXMLTableForUSM(nameSheet As String, wb As Workbook, ws_xml As Worksheet)
     'NAME
     ws_xml.Range("B19").Value = ws.Range("A32").Value
     
-    'Работа 2. Организация и проведение официальных спортивных мероприятий.
+    'Р Р°Р±РѕС‚Р° 2. РћСЂРіР°РЅРёР·Р°С†РёСЏ Рё РїСЂРѕРІРµРґРµРЅРёРµ РѕС„РёС†РёР°Р»СЊРЅС‹С… СЃРїРѕСЂС‚РёРІРЅС‹С… РјРµСЂРѕРїСЂРёСЏС‚РёР№.
     '
     '1
     'Plan
@@ -590,7 +590,7 @@ Sub FillXMLTableForUSM(nameSheet As String, wb As Workbook, ws_xml As Worksheet)
     'NAME
     ws_xml.Range("B20").Value = ws.Range("A42").Value
     
-    'заполняем реквезиты 6 строк
+    'Р·Р°РїРѕР»РЅСЏРµРј СЂРµРєРІРµР·РёС‚С‹ 6 СЃС‚СЂРѕРє
     Call FillXMLTableFromServiceTable(wb, ws_xml, ws, 15, 20)
     
 End Sub
@@ -605,7 +605,7 @@ Sub FillXMLTableForFCPSR(nameSheet As String, wb As Workbook, ws_xml As Workshee
     '   AR:BC = Plan Values1 - G:R
     '   BD:BO = Plan Values2 - G:R
     '   BP:CA = Plan Values3 - G:R
-    'Работа 1. Организация и обеспечение координации деятельности физкультурно-спортивных организаций по подготовке спортивного резерва.
+    'Р Р°Р±РѕС‚Р° 1. РћСЂРіР°РЅРёР·Р°С†РёСЏ Рё РѕР±РµСЃРїРµС‡РµРЅРёРµ РєРѕРѕСЂРґРёРЅР°С†РёРё РґРµСЏС‚РµР»СЊРЅРѕСЃС‚Рё С„РёР·РєСѓР»СЊС‚СѓСЂРЅРѕ-СЃРїРѕСЂС‚РёРІРЅС‹С… РѕСЂРіР°РЅРёР·Р°С†РёР№ РїРѕ РїРѕРґРіРѕС‚РѕРІРєРµ СЃРїРѕСЂС‚РёРІРЅРѕРіРѕ СЂРµР·РµСЂРІР°.
     '
     '1
     'Plan
@@ -628,7 +628,7 @@ Sub FillXMLTableForFCPSR(nameSheet As String, wb As Workbook, ws_xml As Workshee
     'NAME
     ws_xml.Range("B21").Value = ws.Range("A6").Value
     
-    'Организация и проведение официальных спортивных мероприятий.
+    'РћСЂРіР°РЅРёР·Р°С†РёСЏ Рё РїСЂРѕРІРµРґРµРЅРёРµ РѕС„РёС†РёР°Р»СЊРЅС‹С… СЃРїРѕСЂС‚РёРІРЅС‹С… РјРµСЂРѕРїСЂРёСЏС‚РёР№.
     '
     '1
     'Plan
@@ -651,7 +651,7 @@ Sub FillXMLTableForFCPSR(nameSheet As String, wb As Workbook, ws_xml As Workshee
     'NAME
     ws_xml.Range("B22").Value = ws.Range("A6").Value
     
-    'Организация и обеспечение экспериментальной и инновационной деятельности в области физкультуры и спорта.
+    'РћСЂРіР°РЅРёР·Р°С†РёСЏ Рё РѕР±РµСЃРїРµС‡РµРЅРёРµ СЌРєСЃРїРµСЂРёРјРµРЅС‚Р°Р»СЊРЅРѕР№ Рё РёРЅРЅРѕРІР°С†РёРѕРЅРЅРѕР№ РґРµСЏС‚РµР»СЊРЅРѕСЃС‚Рё РІ РѕР±Р»Р°СЃС‚Рё С„РёР·РєСѓР»СЊС‚СѓСЂС‹ Рё СЃРїРѕСЂС‚Р°.
     '
     '1
     'Plan
@@ -674,7 +674,7 @@ Sub FillXMLTableForFCPSR(nameSheet As String, wb As Workbook, ws_xml As Workshee
     'NAME
     ws_xml.Range("B23").Value = ws.Range("A6").Value
     
-    'Работа 4. Организация и проведение официальных физкультурных (физкультурно-оздоровительных) мероприятий.
+    'Р Р°Р±РѕС‚Р° 4. РћСЂРіР°РЅРёР·Р°С†РёСЏ Рё РїСЂРѕРІРµРґРµРЅРёРµ РѕС„РёС†РёР°Р»СЊРЅС‹С… С„РёР·РєСѓР»СЊС‚СѓСЂРЅС‹С… (С„РёР·РєСѓР»СЊС‚СѓСЂРЅРѕ-РѕР·РґРѕСЂРѕРІРёС‚РµР»СЊРЅС‹С…) РјРµСЂРѕРїСЂРёСЏС‚РёР№.
     '
     '1
     'Plan
@@ -697,7 +697,7 @@ Sub FillXMLTableForFCPSR(nameSheet As String, wb As Workbook, ws_xml As Workshee
     'NAME
     ws_xml.Range("B24").Value = ws.Range("A20").Value
     
-    'заполняем реквезиты 6 строк
+    'Р·Р°РїРѕР»РЅСЏРµРј СЂРµРєРІРµР·РёС‚С‹ 6 СЃС‚СЂРѕРє
     Call FillXMLTableFromServiceTable(wb, ws_xml, ws, 21, 24)
     
 End Sub
@@ -712,7 +712,7 @@ Sub FillXMLTableForUGSPORT(nameSheet As String, wb As Workbook, ws_xml As Worksh
     '   AR:BC = Plan Values1 - G:R
     '   BD:BO = Plan Values2 - G:R
     '   BP:CA = Plan Values3 - G:R
-    'Работа 1. Организация и обеспечение координации деятельности физкультурно-спортивных организаций по подготовке спортивного резерва.
+    'Р Р°Р±РѕС‚Р° 1. РћСЂРіР°РЅРёР·Р°С†РёСЏ Рё РѕР±РµСЃРїРµС‡РµРЅРёРµ РєРѕРѕСЂРґРёРЅР°С†РёРё РґРµСЏС‚РµР»СЊРЅРѕСЃС‚Рё С„РёР·РєСѓР»СЊС‚СѓСЂРЅРѕ-СЃРїРѕСЂС‚РёРІРЅС‹С… РѕСЂРіР°РЅРёР·Р°С†РёР№ РїРѕ РїРѕРґРіРѕС‚РѕРІРєРµ СЃРїРѕСЂС‚РёРІРЅРѕРіРѕ СЂРµР·РµСЂРІР°.
     '
     '1
     'Plan
@@ -736,7 +736,7 @@ Sub FillXMLTableForUGSPORT(nameSheet As String, wb As Workbook, ws_xml As Worksh
     ws_xml.Range("B25").Value = ws.Range("A7").Value
     
     
-    'заполняем реквезиты 6 строк
+    'Р·Р°РїРѕР»РЅСЏРµРј СЂРµРєРІРµР·РёС‚С‹ 6 СЃС‚СЂРѕРє
     Call FillXMLTableFromServiceTable(wb, ws_xml, ws, 25, 25)
     
 End Sub
@@ -751,7 +751,7 @@ Sub FillXMLTableForOZEROKRUG(nameSheet As String, wb As Workbook, ws_xml As Work
     '   AR:BC = Plan Values1 - G:R
     '   BD:BO = Plan Values2 - G:R
     '   BP:CA = Plan Values3 - G:R
-    'Работа 1. Организация и обеспечение координации деятельности физкультурно-спортивных организаций по подготовке спортивного резерва.
+    'Р Р°Р±РѕС‚Р° 1. РћСЂРіР°РЅРёР·Р°С†РёСЏ Рё РѕР±РµСЃРїРµС‡РµРЅРёРµ РєРѕРѕСЂРґРёРЅР°С†РёРё РґРµСЏС‚РµР»СЊРЅРѕСЃС‚Рё С„РёР·РєСѓР»СЊС‚СѓСЂРЅРѕ-СЃРїРѕСЂС‚РёРІРЅС‹С… РѕСЂРіР°РЅРёР·Р°С†РёР№ РїРѕ РїРѕРґРіРѕС‚РѕРІРєРµ СЃРїРѕСЂС‚РёРІРЅРѕРіРѕ СЂРµР·РµСЂРІР°.
     '
     '1
     'Plan
@@ -775,7 +775,7 @@ Sub FillXMLTableForOZEROKRUG(nameSheet As String, wb As Workbook, ws_xml As Work
     ws_xml.Range("B26").Value = ws.Range("A7").Value
     
     
-    'заполняем реквезиты 6 строк
+    'Р·Р°РїРѕР»РЅСЏРµРј СЂРµРєРІРµР·РёС‚С‹ 6 СЃС‚СЂРѕРє
     Call FillXMLTableFromServiceTable(wb, ws_xml, ws, 26, 26)
     
 End Sub
@@ -790,7 +790,7 @@ Sub FillXMLTableForNOVOGORSK(nameSheet As String, wb As Workbook, ws_xml As Work
     '   AR:BC = Plan Values1 - G:R
     '   BD:BO = Plan Values2 - G:R
     '   BP:CA = Plan Values3 - G:R
-    'Работа 1. Организация и обеспечение координации деятельности физкультурно-спортивных организаций по подготовке спортивного резерва.
+    'Р Р°Р±РѕС‚Р° 1. РћСЂРіР°РЅРёР·Р°С†РёСЏ Рё РѕР±РµСЃРїРµС‡РµРЅРёРµ РєРѕРѕСЂРґРёРЅР°С†РёРё РґРµСЏС‚РµР»СЊРЅРѕСЃС‚Рё С„РёР·РєСѓР»СЊС‚СѓСЂРЅРѕ-СЃРїРѕСЂС‚РёРІРЅС‹С… РѕСЂРіР°РЅРёР·Р°С†РёР№ РїРѕ РїРѕРґРіРѕС‚РѕРІРєРµ СЃРїРѕСЂС‚РёРІРЅРѕРіРѕ СЂРµР·РµСЂРІР°.
     '
     '1
     'Plan
@@ -814,7 +814,7 @@ Sub FillXMLTableForNOVOGORSK(nameSheet As String, wb As Workbook, ws_xml As Work
     ws_xml.Range("B27").Value = ws.Range("A7").Value
     
     
-    'заполняем реквезиты 6 строк
+    'Р·Р°РїРѕР»РЅСЏРµРј СЂРµРєРІРµР·РёС‚С‹ 6 СЃС‚СЂРѕРє
     Call FillXMLTableFromServiceTable(wb, ws_xml, ws, 27, 27)
     
 End Sub
@@ -830,7 +830,7 @@ Sub FillXMLTableForOKA(nameSheet As String, wb As Workbook, ws_xml As Worksheet)
     '   AR:BC = Plan Values1 - G:R
     '   BD:BO = Plan Values2 - G:R
     '   BP:CA = Plan Values3 - G:R
-    'Работа 1. Организация и обеспечение координации деятельности физкультурно-спортивных организаций по подготовке спортивного резерва.
+    'Р Р°Р±РѕС‚Р° 1. РћСЂРіР°РЅРёР·Р°С†РёСЏ Рё РѕР±РµСЃРїРµС‡РµРЅРёРµ РєРѕРѕСЂРґРёРЅР°С†РёРё РґРµСЏС‚РµР»СЊРЅРѕСЃС‚Рё С„РёР·РєСѓР»СЊС‚СѓСЂРЅРѕ-СЃРїРѕСЂС‚РёРІРЅС‹С… РѕСЂРіР°РЅРёР·Р°С†РёР№ РїРѕ РїРѕРґРіРѕС‚РѕРІРєРµ СЃРїРѕСЂС‚РёРІРЅРѕРіРѕ СЂРµР·РµСЂРІР°.
     '
     '1
     'Plan
@@ -854,7 +854,7 @@ Sub FillXMLTableForOKA(nameSheet As String, wb As Workbook, ws_xml As Worksheet)
     ws_xml.Range("B28").Value = ws.Range("A7").Value
     
     
-    'заполняем реквезиты 6 строк
+    'Р·Р°РїРѕР»РЅСЏРµРј СЂРµРєРІРµР·РёС‚С‹ 6 СЃС‚СЂРѕРє
     Call FillXMLTableFromServiceTable(wb, ws_xml, ws, 28, 28)
     
 End Sub
@@ -869,7 +869,7 @@ Sub FillXMLTableForKRIM(nameSheet As String, wb As Workbook, ws_xml As Worksheet
     '   AR:BC = Plan Values1 - G:R
     '   BD:BO = Plan Values2 - G:R
     '   BP:CA = Plan Values3 - G:R
-    'Работа 1. Организация и обеспечение координации деятельности физкультурно-спортивных организаций по подготовке спортивного резерва.
+    'Р Р°Р±РѕС‚Р° 1. РћСЂРіР°РЅРёР·Р°С†РёСЏ Рё РѕР±РµСЃРїРµС‡РµРЅРёРµ РєРѕРѕСЂРґРёРЅР°С†РёРё РґРµСЏС‚РµР»СЊРЅРѕСЃС‚Рё С„РёР·РєСѓР»СЊС‚СѓСЂРЅРѕ-СЃРїРѕСЂС‚РёРІРЅС‹С… РѕСЂРіР°РЅРёР·Р°С†РёР№ РїРѕ РїРѕРґРіРѕС‚РѕРІРєРµ СЃРїРѕСЂС‚РёРІРЅРѕРіРѕ СЂРµР·РµСЂРІР°.
     '
     '1
     'Plan
@@ -893,7 +893,7 @@ Sub FillXMLTableForKRIM(nameSheet As String, wb As Workbook, ws_xml As Worksheet
     ws_xml.Range("B29").Value = ws.Range("A7").Value
     
     
-    'заполняем реквезиты 6 строк
+    'Р·Р°РїРѕР»РЅСЏРµРј СЂРµРєРІРµР·РёС‚С‹ 6 СЃС‚СЂРѕРє
     Call FillXMLTableFromServiceTable(wb, ws_xml, ws, 29, 29)
     
 End Sub
@@ -942,8 +942,8 @@ Sub WriteXMLFileForNormativ(ws_xml As Worksheet, wb As Workbook)
                     If RowCount > 1 Then
                         CountNormativ = CountNormativ + 1
                         Dim path_xml As String
-                        'path_xml = CStr(GetFilePath(wb.path, wb.Name, CStr(CountNormativ) & " Нормативы", CStr(base_name_prev)))
-                        path_xml = CStr(GetFilePath(wb.path, wb.name, CStr(CountNormativ) & "_Нормативы", CStr(base_code_prev) & "_" & CStr(ind_name_prev)))
+                        'path_xml = CStr(GetFilePath(wb.path, wb.Name, CStr(CountNormativ) & " РќРѕСЂРјР°С‚РёРІС‹", CStr(base_name_prev)))
+                        path_xml = CStr(GetFilePath(wb.path, wb.name, CStr(CountNormativ) & "_РќРѕСЂРјР°С‚РёРІС‹", CStr(base_code_prev) & "_" & CStr(ind_name_prev)))
                         XDoc.Save path_xml
                     End If
                     If base_name_cur = "" Then
@@ -1012,7 +1012,7 @@ Sub WriteXMLFileForNormativ(ws_xml As Worksheet, wb As Workbook)
                     
                     Set Inst_name_oiv = XDoc.createElement("Inst_name_grbs")
                     root.appendChild Inst_name_oiv
-                    Inst_name_oiv.Text = "МИНИСТЕРСТВО СПОРТА РОССИЙСКОЙ ФЕДЕРАЦИИ"
+                    Inst_name_oiv.Text = "РњРРќРРЎРўР•Р РЎРўР’Рћ РЎРџРћР РўРђ Р РћРЎРЎРР™РЎРљРћР™ Р¤Р•Р”Р•Р РђР¦РР"
                     
                     Set Inst_inn = XDoc.createElement("Inst_inn")
                     root.appendChild Inst_inn
@@ -1041,11 +1041,11 @@ Sub WriteXMLFileForNormativ(ws_xml As Worksheet, wb As Workbook)
                 newStrRegNumber = getStringBeforeSpace(strRegNumber, "_")
                 RegNumber.Text = newStrRegNumber
                 
-                'Учреждения
+                'РЈС‡СЂРµР¶РґРµРЅРёСЏ
                 Set Dprtm_records = XDoc.createElement("Dprtm_records")
                 Registry_record.appendChild Dprtm_records
                 
-                'Запись учреждения
+                'Р—Р°РїРёСЃСЊ СѓС‡СЂРµР¶РґРµРЅРёСЏ
                 Set Dprtm_record = XDoc.createElement("Dprtm_record")
                 Dprtm_records.appendChild Dprtm_record
                 
@@ -1065,7 +1065,7 @@ Sub WriteXMLFileForNormativ(ws_xml As Worksheet, wb As Workbook)
                 Dprtm_record.appendChild Dprtm_kpp
                 Dprtm_kpp.Text = CStr(rw.Cells(1, 80))
                 
-                'Значения учреждения
+                'Р—РЅР°С‡РµРЅРёСЏ СѓС‡СЂРµР¶РґРµРЅРёСЏ
                 Set Dprtm_values = XDoc.createElement("Dprtm_values")
                 Dprtm_record.appendChild Dprtm_values
                 
@@ -1282,7 +1282,7 @@ Sub WriteXMLFileForOFO(ws_xml As Worksheet, wb As Workbook)
                     
     Set Inst_name_oiv = XDoc.createElement("Inst_name")
     root.appendChild Inst_name_oiv
-    Inst_name_oiv.Text = "МИНИСТЕРСТВО СПОРТА РОССИЙСКОЙ ФЕДЕРАЦИИ"
+    Inst_name_oiv.Text = "РњРРќРРЎРўР•Р РЎРўР’Рћ РЎРџРћР РўРђ Р РћРЎРЎРР™РЎРљРћР™ Р¤Р•Р”Р•Р РђР¦РР"
                     
     Set Inst_inn = XDoc.createElement("Inst_inn")
     root.appendChild Inst_inn
@@ -1303,8 +1303,8 @@ Sub WriteXMLFileForOFO(ws_xml As Worksheet, wb As Workbook)
             If CStr(ws_xml.Cells(rw.Row, 1).Value) = "" Then
                 If RowCount > 1 Then
                     Dim path_xml As String
-                    'path_xml = CStr(GetFilePath(wb.path, wb.Name, CStr(CountNormativ) & " Нормативы", CStr(base_name_prev)))
-                    path_xml = CStr(GetFilePath(wb.path, wb.name, "0" & "_ОФО", "" & "" & ""))
+                    'path_xml = CStr(GetFilePath(wb.path, wb.Name, CStr(CountNormativ) & " РќРѕСЂРјР°С‚РёРІС‹", CStr(base_name_prev)))
+                    path_xml = CStr(GetFilePath(wb.path, wb.name, "0" & "_РћР¤Рћ", "" & "" & ""))
                     XDoc.Save path_xml
                 End If
                 If CStr(ws_xml.Cells(rw.Row, 1).Value) = "" Then
@@ -1465,37 +1465,37 @@ Sub FillXMLTableForYear1(nameSheet As String, wb As Workbook, ws_xml As Workshee
             If CStr(ws.Cells(i, 3).Value) = "" Then
                 Exit For
             End If
-            'ФР = AVA = 1249 - 1 / val1 = J = 10
+            'Р¤Р  = AVA = 1249 - 1 / val1 = J = 10
             ws_xml.Cells(StartRowCountD, 10).Value = ws.Cells(i, 1249).Value
-            'ИНЗ = AVB = 1250 - 2 / val1 = K = 11
+            'РРќР— = AVB = 1250 - 2 / val1 = K = 11
             ws_xml.Cells(StartRowCountD, 11).Value = ws.Cells(i, 1250).Value
-            'уч литература = AVC = 1251 - 3 / val1 = J
+            'СѓС‡ Р»РёС‚РµСЂР°С‚СѓСЂР° = AVC = 1251 - 3 / val1 = J
             'ws_xml.Cells(StartRowCountD, 10).Value = ws.Cells(i, 1249).Value
-            'практика = AVD = 1252 - 4 / val1 = J
+            'РїСЂР°РєС‚РёРєР° = AVD = 1252 - 4 / val1 = J
             'ws_xml.Cells(StartRowCountD, 10).Value = ws.Cells(i, 1249).Value
-            'повыш квалиф = AVE = 1253 - 5 / val1 = J
+            'РїРѕРІС‹С€ РєРІР°Р»РёС„ = AVE = 1253 - 5 / val1 = J
             'ws_xml.Cells(StartRowCountD, 10).Value = ws.Cells(i, 1249).Value
-            'медосмотры = AVF = 1254 - 6 / val1 = J
+            'РјРµРґРѕСЃРјРѕС‚СЂС‹ = AVF = 1254 - 6 / val1 = J
             'ws_xml.Cells(StartRowCountD, 10).Value = ws.Cells(i, 1249).Value
-            'КУ = AVG = 1255 - 7 / val1 = L = 12
+            'РљРЈ = AVG = 1255 - 7 / val1 = L = 12
             ws_xml.Cells(StartRowCountD, 12).Value = ws.Cells(i, 1255).Value
-            'СНИ = AVH = 1256 - 8 / val1 = M = 13
+            'РЎРќР = AVH = 1256 - 8 / val1 = M = 13
             ws_xml.Cells(StartRowCountD, 13).Value = ws.Cells(i, 1256).Value
-            'СОЦДИ = AVI = 1257 - 9 / val1 = N = 14
+            'РЎРћР¦Р”Р = AVI = 1257 - 9 / val1 = N = 14
             ws_xml.Cells(StartRowCountD, 14).Value = ws.Cells(i, 1257).Value
-            'ФР2 = AVJ = 1258 - 10 / val1 = O = 15
+            'Р¤Р 2 = AVJ = 1258 - 10 / val1 = O = 15
             ws_xml.Cells(StartRowCountD, 15).Value = ws.Cells(i, 1258).Value
-            'УС = AVK = 1259 - 11 / val1 = P = 16
+            'РЈРЎ = AVK = 1259 - 11 / val1 = P = 16
             ws_xml.Cells(StartRowCountD, 16).Value = ws.Cells(i, 1259).Value
-            'ТУ = AVL = 1260 - 12 / val1 = Q = 17
+            'РўРЈ = AVL = 1260 - 12 / val1 = Q = 17
             ws_xml.Cells(StartRowCountD, 17).Value = ws.Cells(i, 1260).Value
-            'ОТ 2 = AVM = 1261 - 13 / val1 = R = 18
+            'РћРў 2 = AVM = 1261 - 13 / val1 = R = 18
             ws_xml.Cells(StartRowCountD, 18).Value = ws.Cells(i, 1261).Value
-            'ОТ2 зп = AVN = 1262 - 14 / val1 = J
+            'РћРў2 Р·Рї = AVN = 1262 - 14 / val1 = J
             'ws_xml.Cells(StartRowCountD, 10).Value = ws.Cells(i, 1249).Value
-            'начисления = AVO = 1263 - 15 / val1 = J
+            'РЅР°С‡РёСЃР»РµРЅРёСЏ = AVO = 1263 - 15 / val1 = J
             'ws_xml.Cells(StartRowCountD, 10).Value = ws.Cells(i, 1249).Value
-            'ПНЗ = AVP = 1264 - 16 / val1 = S = 19
+            'РџРќР— = AVP = 1264 - 16 / val1 = S = 19
             ws_xml.Cells(StartRowCountD, 19).Value = ws.Cells(i, 1264).Value
             'Values
             'Value1 = P = 16 / val1 = E = 5
@@ -1513,26 +1513,26 @@ Sub FillXMLTableForYear1(nameSheet As String, wb As Workbook, ws_xml As Workshee
             'RegNumber
             Dim reg As Variant
             reg = FindRegNumber(CStr(ws.Cells(i, 13).Value), wb, 2, 1000)
-            'Наименование услуги
+            'РќР°РёРјРµРЅРѕРІР°РЅРёРµ СѓСЃР»СѓРіРё
             ws_xml.Cells(StartRowCountD, 2).Value = reg(0)
-            'Номер
+            'РќРѕРјРµСЂ
             ws_xml.Cells(StartRowCountD, 81).Value = CStr(ws.Cells(i, 13).Value)
-            'Наименование объема
+            'РќР°РёРјРµРЅРѕРІР°РЅРёРµ РѕР±СЉРµРјР°
             ws_xml.Cells(StartRowCountD, 82).Value = reg(2)
-            'Еденица измерения объема
+            'Р•РґРµРЅРёС†Р° РёР·РјРµСЂРµРЅРёСЏ РѕР±СЉРµРјР°
             ws_xml.Cells(StartRowCountD, 83).Value = reg(3)
-            'Базовый код
+            'Р‘Р°Р·РѕРІС‹Р№ РєРѕРґ
             ws_xml.Cells(StartRowCountD, 84).Value = reg(4)
-            'Начало работ
+            'РќР°С‡Р°Р»Рѕ СЂР°Р±РѕС‚
             ws_xml.Cells(StartRowCountD, 87).Value = reg(5)
-            'Конец работ
+            'РљРѕРЅРµС† СЂР°Р±РѕС‚
             ws_xml.Cells(StartRowCountD, 88).Value = reg(6)
-            'Код ОКЕИ
+            'РљРѕРґ РћРљР•Р
             ws_xml.Cells(StartRowCountD, 85).Value = reg(7)
-            'Код Индикатора
+            'РљРѕРґ РРЅРґРёРєР°С‚РѕСЂР°
             ws_xml.Cells(StartRowCountD, 86).Value = reg(8)
             
-            'Кбк
+            'РљР±Рє
             If ws_xml.Cells(StartRowCountD, 1).Value = "" Then
                 ws_xml.Cells(StartRowCountD, 1).Value = "0"
             End If
@@ -1549,13 +1549,13 @@ Sub FillXMLTableForYear1(nameSheet As String, wb As Workbook, ws_xml As Workshee
 
         
     Next i
-    'заполняем реквезиты 12 строк
+    'Р·Р°РїРѕР»РЅСЏРµРј СЂРµРєРІРµР·РёС‚С‹ 12 СЃС‚СЂРѕРє
     'Call FillXMLTableFromServiceTable(wb, ws_xml, ws, 2, 14)
     
 End Sub
 Public Function FindOrg(shortName As String, wb As Workbook, StartRowCountS, EndRowCount As Integer) As String()
     Dim ws As Worksheet
-    Set ws = wb.Sheets("Учр")
+    Set ws = wb.Sheets("РЈС‡СЂ")
     Dim returnVal(3) As String
     Index = 0
     For i = StartRowCountS To EndRowCount
