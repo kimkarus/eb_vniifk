@@ -911,13 +911,14 @@ Sub WriteXMLFileForNormativ(ws_xml As Worksheet, wb As Workbook)
     Dim rw As Range
     RowCount = 0
     CountNormativ = 0
-    Dim base_name_prev, base_name_cur, okei_code_prev, okei_code_cur, base_code_prev, base_code_cur, ind_name_prev, ind_name_cur As String
+    Dim base_name_prev, base_name_cur, okei_code_prev, okei_code_cur, base_code_prev, base_code_cur, ind_name_prev, ind_name_cur, kbk_prev, kbk_cur As String
     Dim isTheSame As Boolean
     isTheSame = False
     base_name_prev = ""
     base_code_prev = ""
     okei_code_prev = ""
     ind_name_prev = ""
+    kbk_prev = ""
     For Each rw In ws_xml.Rows
 
         If RowCount > 0 Then
@@ -925,302 +926,317 @@ Sub WriteXMLFileForNormativ(ws_xml As Worksheet, wb As Workbook)
             okei_code_cur = CStr(Format(rw.Cells(1, 85), "000"))
             base_code_cur = CStr(rw.Cells(1, 84))
             ind_name_cur = CStr(rw.Cells(1, 82))
-                If base_name_cur <> base_name_prev Or okei_code_cur <> okei_code_prev Or ind_name_prev <> ind_name_cur Then
-                    If RowCount > 1 Then
-                        CountNormativ = CountNormativ + 1
-                        Dim path_xml As String
-                        'path_xml = CStr(GetFilePath(wb.path, wb.Name, CStr(CountNormativ) & " Нормативы", CStr(base_name_prev)))
-                        path_xml = CStr(GetFilePath(wb.path, wb.name, CStr(CountNormativ) & "_Нормативы", CStr(base_code_prev) & "_" & CStr(ind_name_prev)))
-                        XDoc.Save path_xml
+            kbk_cur = CStr(rw.Cells(1, 1))
+                If kbk_cur <> "" And kbk_cur <> "0" Then
+                    If base_name_cur <> base_name_prev Or okei_code_cur <> okei_code_prev Or ind_name_prev <> ind_name_cur Then
+                        If RowCount > 1 Then
+                            CountNormativ = CountNormativ + 1
+                            Dim path_xml As String
+                            'path_xml = CStr(GetFilePath(wb.path, wb.Name, CStr(CountNormativ) & " Нормативы", CStr(base_name_prev)))
+                            path_xml = CStr(GetFilePath(wb.path, wb.name, CStr(CountNormativ) & "_Нормативы", CStr(base_code_prev) & "_" & CStr(ind_name_prev)))
+                            XDoc.Save path_xml
+                        End If
+                        If base_name_cur = "" Then
+                            Exit For
+                        End If
+                        Set XDoc = CreateObject("MSXML2.DOMDocument")
+                        XDoc.appendChild XDoc.createProcessingInstruction("xml", "version='1.0' encoding='windows-1251'")
+                        isTheSame = False
+                        If ws_xml.Cells(rw.Row, 1).Value Then
+                            base_name_prev = base_name_cur
+                            okei_code_prev = okei_code_cur
+                            base_code_prev = base_code_cur
+                            ind_name_prev = ind_name_cur
+                            kbk_prev = kbk_cur
+                        End If
+                    Else
+                        isTheSame = True
                     End If
-                    If base_name_cur = "" Then
-                        Exit For
-                    End If
-                    Set XDoc = CreateObject("MSXML2.DOMDocument")
-                    XDoc.appendChild XDoc.createProcessingInstruction("xml", "version='1.0' encoding='windows-1251'")
-                    isTheSame = False
-                    If ws_xml.Cells(rw.Row, 1).Value <> "" Then
-                        base_name_prev = base_name_cur
-                        okei_code_prev = okei_code_cur
-                        base_code_prev = base_code_cur
-                        ind_name_prev = ind_name_cur
-                    End If
-                Else
-                    isTheSame = True
                 End If
-                If Not isTheSame Then
-                    Set root = XDoc.createElement("BNZ_INF_GRBS")
-                    XDoc.appendChild root
-            
-                    Set Base_code = XDoc.createElement("Base_code")
-                    root.appendChild Base_code
-                    Base_code.Text = CStr(rw.Cells(1, 84))
-                    
-                    Set Base_name = XDoc.createElement("Base_name")
-                    root.appendChild Base_name
-                    Base_name.Text = base_name_cur
-
-                    Set Volume_indicator_code = XDoc.createElement("Volume_indicator_code")
-                    root.appendChild Volume_indicator_code
-                    Volume_indicator_code.Text = CStr(Format(rw.Cells(1, 86), "000"))
-                    
-                    Set Volume_indicator_name = XDoc.createElement("Volume_indicator_name")
-                    root.appendChild Volume_indicator_name
-                    Volume_indicator_name.Text = CStr(rw.Cells(1, 82))
-                    
-                    Set Volume_indicator_okei_code = XDoc.createElement("Volume_indicator_okei_code")
-                    root.appendChild Volume_indicator_okei_code
-                    Volume_indicator_okei_code.Text = CStr(Format(rw.Cells(1, 85), "000"))
-                    
-                    Set Volume_indicator_okei_name = XDoc.createElement("Volume_indicator_okei_name")
-                    root.appendChild Volume_indicator_okei_name
-                    Volume_indicator_okei_name.Text = CStr(rw.Cells(1, 83))
-                    
-                    Set EffectiveFrom = XDoc.createElement("EffectiveFrom")
-                    root.appendChild EffectiveFrom
-                    If CStr(rw.Cells(1, 84)) = "" Then
-                            EffectiveFrom.Text = "22.07.2015"
-                        Else
-                            EffectiveFrom.Text = CStr(rw.Cells(1, 87))
-                    End If
-                    
-                    Set EffectiveBefore = XDoc.createElement("EffectiveBefore")
-                    root.appendChild EffectiveBefore
-                    
-                    If CStr(rw.Cells(1, 84)) = "" Then
-                            EffectiveBefore.Text = "31.12.2099"
-                        Else
-                            EffectiveBefore.Text = CStr(rw.Cells(1, 88))
-                    End If
-
-                    Set Inst_code_oiv = XDoc.createElement("Inst_code_grbs")
-                    root.appendChild Inst_code_oiv
-                    Inst_code_oiv.Text = CStr(Format(rw.Cells(1, 87), "0000000000000000000"))
-                    
-                    Set Inst_name_oiv = XDoc.createElement("Inst_name_grbs")
-                    root.appendChild Inst_name_oiv
-                    Inst_name_oiv.Text = "МИНИСТЕРСТВО СПОРТА РОССИЙСКОЙ ФЕДЕРАЦИИ"
-                    
-                    Set Inst_inn = XDoc.createElement("Inst_inn")
-                    root.appendChild Inst_inn
-                    Inst_inn.Text = "7703771271"
-                    
-                    Set Inst_kpp = XDoc.createElement("Inst_kpp")
-                    root.appendChild Inst_kpp
-                    Inst_kpp.Text = "770901001"
-                    
-                    Set Registry_records = XDoc.createElement("Registry_records")
-                    root.appendChild Registry_records
-                    
-                    'Set Dprtm_values = XDoc.createElement("Dprtm_values")
-                    'root.appendChild Dprtm_values
-                End If
-
-                Set Registry_record = XDoc.createElement("Registry_record")
-                Registry_records.appendChild Registry_record
-                
-                
-                Set RegNumber = XDoc.createElement("RegNumber")
-                Registry_record.appendChild RegNumber
-  
                 Dim strRegNumber, newStrRegNumber As String
                 strRegNumber = RemoveWhiteSpace(CStr(rw.Cells(1, 81)))
-                newStrRegNumber = getStringBeforeSpace(strRegNumber, "_")
-                RegNumber.Text = newStrRegNumber
                 
-                'Учреждения
-                Set Dprtm_records = XDoc.createElement("Dprtm_records")
-                Registry_record.appendChild Dprtm_records
+                isGood = True
+                If strRegNumber = "" Then
+                    isGood = False
+                End If
+                If isGood Then
+                    If Not isTheSame Then
+                        Set root = XDoc.createElement("BNZ_INF_GRBS")
+                        XDoc.appendChild root
                 
-                'Запись учреждения
-                Set Dprtm_record = XDoc.createElement("Dprtm_record")
-                Dprtm_records.appendChild Dprtm_record
-                
-                Set Dprtm_code = XDoc.createElement("Dprtm_code")
-                Dprtm_record.appendChild Dprtm_code
-                Dprtm_code.Text = ""
-                
-                Set Dprtm_name = XDoc.createElement("Dprtm_name")
-                Dprtm_record.appendChild Dprtm_name
-                Dprtm_name.Text = CStr(rw.Cells(1, 3))
-                
-                Set Dprtm_inn = XDoc.createElement("Dprtm_inn")
-                Dprtm_record.appendChild Dprtm_inn
-                Dprtm_inn.Text = CStr(rw.Cells(1, 4))
-                
-                Set Dprtm_kpp = XDoc.createElement("Dprtm_kpp")
-                Dprtm_record.appendChild Dprtm_kpp
-                Dprtm_kpp.Text = CStr(rw.Cells(1, 80))
-                
-                'Значения учреждения
-                Set Dprtm_values = XDoc.createElement("Dprtm_values")
-                Dprtm_record.appendChild Dprtm_values
-                
-                'Set Bnz_avrg_pmnt = XDoc.createElement("Bnz_avrg_pmnt")
-                'Dprtm_record.appendChild Bnz_avrg_pmnt
-                
-                Dim rel As Object
-                'Insrns_Pmnt_val
-                Set Insrns_Pmnt = XDoc.createElement("Insrns_Pmnt_Ot1_dprtm")
-                Dprtm_values.appendChild Insrns_Pmnt
-                Set rel = XDoc.createAttribute("val_1")
-                rel.NodeValue = CStr(rw.Cells(1, 8))
-                Insrns_Pmnt.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_2")
-                rel.NodeValue = CStr(rw.Cells(1, 20))
-                Insrns_Pmnt.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_3")
-                rel.NodeValue = CStr(rw.Cells(1, 32))
-                Insrns_Pmnt.setAttributeNode rel
-                
-                'Mz_val
-                Set Mz = XDoc.createElement("Mz_dprtm")
-                Dprtm_values.appendChild Mz
-                Set rel = XDoc.createAttribute("val_1")
-                rel.NodeValue = CStr(rw.Cells(1, 9))
-                Mz.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_2")
-                rel.NodeValue = CStr(rw.Cells(1, 21))
-                Mz.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_3")
-                rel.NodeValue = CStr(rw.Cells(1, 33))
-                Mz.setAttributeNode rel
-                
-                'Fr_val
-                Set Fr = XDoc.createElement("Fr_dprtm")
-                Dprtm_values.appendChild Fr
-                Set rel = XDoc.createAttribute("val_1")
-                rel.NodeValue = CStr(rw.Cells(1, 10))
-                Fr.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_2")
-                rel.NodeValue = CStr(rw.Cells(1, 22))
-                Fr.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_3")
-                rel.NodeValue = CStr(rw.Cells(1, 34))
-                Fr.setAttributeNode rel
-                
-                'Inz_val
-                Set Inz = XDoc.createElement("Inz_dprtm")
-                Dprtm_values.appendChild Inz
-                Set rel = XDoc.createAttribute("val_1")
-                rel.NodeValue = CStr(rw.Cells(1, 11))
-                Inz.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_2")
-                rel.NodeValue = CStr(rw.Cells(1, 23))
-                Inz.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_3")
-                rel.NodeValue = CStr(rw.Cells(1, 35))
-                Inz.setAttributeNode rel
-                
-                'Ku_val
-                Set Ku = XDoc.createElement("Ku_dprtm")
-                Dprtm_values.appendChild Ku
-                Set rel = XDoc.createAttribute("val_1")
-                rel.NodeValue = CStr(rw.Cells(1, 12))
-                Ku.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_2")
-                rel.NodeValue = CStr(rw.Cells(1, 24))
-                Ku.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_3")
-                rel.NodeValue = CStr(rw.Cells(1, 36))
-                Ku.setAttributeNode rel
-                
-                'Sni_val
-                Set Sni = XDoc.createElement("Sni_dprtm")
-                Dprtm_values.appendChild Sni
-                Set rel = XDoc.createAttribute("val_1")
-                rel.NodeValue = CStr(rw.Cells(1, 13))
-                Sni.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_2")
-                rel.NodeValue = CStr(rw.Cells(1, 25))
-                Sni.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_3")
-                rel.NodeValue = CStr(rw.Cells(1, 37))
-                Sni.setAttributeNode rel
-                
-                'Socdi_val
-                Set Socdi = XDoc.createElement("Socdi_dprtm")
-                Dprtm_values.appendChild Socdi
-                Set rel = XDoc.createAttribute("val_1")
-                rel.NodeValue = CStr(rw.Cells(1, 14))
-                Socdi.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_2")
-                rel.NodeValue = CStr(rw.Cells(1, 26))
-                Socdi.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_3")
-                rel.NodeValue = CStr(rw.Cells(1, 38))
-                Socdi.setAttributeNode rel
-                
-                'Fr2_val
-        '        Set rel = XDoc.createAttribute("val_1")
-        '        rel.NodeValue = CStr(rw.Cells(1, 11))
-        '        Insrns_Pmnt.setAttributeNode rel
-        '        Set rel = XDoc.createAttribute("val_2")
-        '        rel.NodeValue = CStr(rw.Cells(1, 23))
-        '        Insrns_Pmnt.setAttributeNode rel
-        '        Set rel = XDoc.createAttribute("val_3")
-        '        rel.NodeValue = CStr(rw.Cells(1, 35))
-        '        Insrns_Pmnt.setAttributeNode rel
-                
-                'Us_val
-                Set Us = XDoc.createElement("Us_dprtm")
-                Dprtm_values.appendChild Us
-                Set rel = XDoc.createAttribute("val_1")
-                rel.NodeValue = CStr(rw.Cells(1, 16))
-                Us.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_2")
-                rel.NodeValue = CStr(rw.Cells(1, 28))
-                Us.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_3")
-                rel.NodeValue = CStr(rw.Cells(1, 40))
-                Us.setAttributeNode rel
-                
-                'Tu_val
-                Set Tu = XDoc.createElement("Tu_dprtm")
-                Dprtm_values.appendChild Tu
-                Set rel = XDoc.createAttribute("val_1")
-                rel.NodeValue = CStr(rw.Cells(1, 17))
-                Tu.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_2")
-                rel.NodeValue = CStr(rw.Cells(1, 29))
-                Tu.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_3")
-                rel.NodeValue = CStr(rw.Cells(1, 41))
-                Tu.setAttributeNode rel
-                
-                'Othr_Pmnt_val
-                Set Othr_Pmnt = XDoc.createElement("Othr_Pmnt_Ot2_dprtm")
-                Dprtm_values.appendChild Othr_Pmnt
-                Set rel = XDoc.createAttribute("val_1")
-                rel.NodeValue = CStr(rw.Cells(1, 18))
-                Othr_Pmnt.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_2")
-                rel.NodeValue = CStr(rw.Cells(1, 30))
-                Othr_Pmnt.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_3")
-                rel.NodeValue = CStr(rw.Cells(1, 42))
-                Othr_Pmnt.setAttributeNode rel
-                
-                'Pnz_val
-                Set Pnz = XDoc.createElement("Pnz_dprtm")
-                Dprtm_values.appendChild Pnz
-                Set rel = XDoc.createAttribute("val_1")
-                rel.NodeValue = CStr(rw.Cells(1, 19))
-                Pnz.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_2")
-                rel.NodeValue = CStr(rw.Cells(1, 31))
-                Pnz.setAttributeNode rel
-                Set rel = XDoc.createAttribute("val_3")
-                rel.NodeValue = CStr(rw.Cells(1, 43))
-                Pnz.setAttributeNode rel
-                
-                Set Kbk_codes = XDoc.createElement("Kbk_codes")
-                Dprtm_values.appendChild Kbk_codes
-                
-                Set Kbk_code = XDoc.createElement("Kbk_code")
-                Kbk_codes.appendChild Kbk_code
-                
-                Kbk_code.Text = RemoveWhiteSpace(CStr(rw.Cells(1, 1)))
+                        Set Base_code = XDoc.createElement("Base_code")
+                        root.appendChild Base_code
+                        Base_code.Text = CStr(rw.Cells(1, 84))
+                        
+                        Set Base_name = XDoc.createElement("Base_name")
+                        root.appendChild Base_name
+                        Base_name.Text = base_name_cur
+    
+                        Set Volume_indicator_code = XDoc.createElement("Volume_indicator_code")
+                        root.appendChild Volume_indicator_code
+                        Volume_indicator_code.Text = CStr(Format(rw.Cells(1, 86), "000"))
+                        
+                        Set Volume_indicator_name = XDoc.createElement("Volume_indicator_name")
+                        root.appendChild Volume_indicator_name
+                        Volume_indicator_name.Text = CStr(rw.Cells(1, 82))
+                        
+                        Set Volume_indicator_okei_code = XDoc.createElement("Volume_indicator_okei_code")
+                        root.appendChild Volume_indicator_okei_code
+                        Volume_indicator_okei_code.Text = CStr(Format(rw.Cells(1, 85), "000"))
+                        
+                        Set Volume_indicator_okei_name = XDoc.createElement("Volume_indicator_okei_name")
+                        root.appendChild Volume_indicator_okei_name
+                        Volume_indicator_okei_name.Text = CStr(rw.Cells(1, 83))
+                        
+                        Set EffectiveFrom = XDoc.createElement("EffectiveFrom")
+                        root.appendChild EffectiveFrom
+                        If CStr(rw.Cells(1, 84)) = "" Then
+                                EffectiveFrom.Text = "22.07.2015"
+                            Else
+                                EffectiveFrom.Text = CStr(rw.Cells(1, 87))
+                        End If
+                        
+                        Set EffectiveBefore = XDoc.createElement("EffectiveBefore")
+                        root.appendChild EffectiveBefore
+                        
+                        If CStr(rw.Cells(1, 84)) = "" Then
+                                EffectiveBefore.Text = "31.12.2099"
+                            Else
+                                EffectiveBefore.Text = CStr(rw.Cells(1, 88))
+                        End If
+    
+                        Set Inst_code_oiv = XDoc.createElement("Inst_code_grbs")
+                        root.appendChild Inst_code_oiv
+                        Inst_code_oiv.Text = CStr(Format(rw.Cells(1, 87), "0000000000000000000"))
+                        
+                        Set Inst_name_oiv = XDoc.createElement("Inst_name_grbs")
+                        root.appendChild Inst_name_oiv
+                        Inst_name_oiv.Text = "МИНИСТЕРСТВО СПОРТА РОССИЙСКОЙ ФЕДЕРАЦИИ"
+                        
+                        Set Inst_inn = XDoc.createElement("Inst_inn")
+                        root.appendChild Inst_inn
+                        Inst_inn.Text = "7703771271"
+                        
+                        Set Inst_kpp = XDoc.createElement("Inst_kpp")
+                        root.appendChild Inst_kpp
+                        Inst_kpp.Text = "770901001"
+                        
+                        Set Inst_code = XDoc.createElement("Inst_code")
+                        root.appendChild Inst_code
+                        Inst_code.Text = Inst_inn.Text + Inst_kpp.Text
+                        
+                        Set Registry_records = XDoc.createElement("Registry_records")
+                        root.appendChild Registry_records
+                        
+                        'Set Dprtm_values = XDoc.createElement("Dprtm_values")
+                        'root.appendChild Dprtm_values
+                    End If
+    
+                    Set Registry_record = XDoc.createElement("Registry_record")
+                    Registry_records.appendChild Registry_record
+                    
+                    
+                    Set RegNumber = XDoc.createElement("RegNumber")
+                    Registry_record.appendChild RegNumber
+      
+                    newStrRegNumber = getStringBeforeSpace(strRegNumber, "_")
+                    RegNumber.Text = newStrRegNumber
+                    
+                    'Учреждения
+                    Set Dprtm_records = XDoc.createElement("Dprtm_records")
+                    Registry_record.appendChild Dprtm_records
+                    
+                    'Запись учреждения
+                    Set Dprtm_record = XDoc.createElement("Dprtm_record")
+                    Dprtm_records.appendChild Dprtm_record
+                    
+                    Set Dprtm_code = XDoc.createElement("Dprtm_code")
+                    Dprtm_record.appendChild Dprtm_code
+                    Dprtm_code.Text = CStr(rw.Cells(1, 89))
+                    
+                    Set Dprtm_name = XDoc.createElement("Dprtm_name")
+                    Dprtm_record.appendChild Dprtm_name
+                    Dprtm_name.Text = CStr(rw.Cells(1, 3))
+                    
+                    Set Dprtm_inn = XDoc.createElement("Dprtm_inn")
+                    Dprtm_record.appendChild Dprtm_inn
+                    Dprtm_inn.Text = CStr(rw.Cells(1, 4))
+                    
+                    Set Dprtm_kpp = XDoc.createElement("Dprtm_kpp")
+                    Dprtm_record.appendChild Dprtm_kpp
+                    Dprtm_kpp.Text = CStr(rw.Cells(1, 80))
+                    
+                    'Значения учреждения
+                    Set Dprtm_values = XDoc.createElement("Dprtm_values")
+                    Dprtm_record.appendChild Dprtm_values
+                    
+                    'Set Bnz_avrg_pmnt = XDoc.createElement("Bnz_avrg_pmnt")
+                    'Dprtm_record.appendChild Bnz_avrg_pmnt
+                    
+                    Dim rel As Object
+                    'Insrns_Pmnt_val
+                    Set Insrns_Pmnt = XDoc.createElement("Insrns_Pmnt_Ot1_dprtm")
+                    Dprtm_values.appendChild Insrns_Pmnt
+                    Set rel = XDoc.createAttribute("val_1")
+                    rel.NodeValue = CStr(rw.Cells(1, 8))
+                    Insrns_Pmnt.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_2")
+                    rel.NodeValue = CStr(rw.Cells(1, 20))
+                    Insrns_Pmnt.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_3")
+                    rel.NodeValue = CStr(rw.Cells(1, 32))
+                    Insrns_Pmnt.setAttributeNode rel
+                    
+                    'Mz_val
+                    Set Mz = XDoc.createElement("Mz_dprtm")
+                    Dprtm_values.appendChild Mz
+                    Set rel = XDoc.createAttribute("val_1")
+                    rel.NodeValue = CStr(rw.Cells(1, 9))
+                    Mz.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_2")
+                    rel.NodeValue = CStr(rw.Cells(1, 21))
+                    Mz.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_3")
+                    rel.NodeValue = CStr(rw.Cells(1, 33))
+                    Mz.setAttributeNode rel
+                    
+                    'Fr_val
+                    Set Fr = XDoc.createElement("Fr_dprtm")
+                    Dprtm_values.appendChild Fr
+                    Set rel = XDoc.createAttribute("val_1")
+                    rel.NodeValue = CStr(rw.Cells(1, 10))
+                    Fr.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_2")
+                    rel.NodeValue = CStr(rw.Cells(1, 22))
+                    Fr.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_3")
+                    rel.NodeValue = CStr(rw.Cells(1, 34))
+                    Fr.setAttributeNode rel
+                    
+                    'Inz_val
+                    Set Inz = XDoc.createElement("Inz_dprtm")
+                    Dprtm_values.appendChild Inz
+                    Set rel = XDoc.createAttribute("val_1")
+                    rel.NodeValue = CStr(rw.Cells(1, 11))
+                    Inz.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_2")
+                    rel.NodeValue = CStr(rw.Cells(1, 23))
+                    Inz.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_3")
+                    rel.NodeValue = CStr(rw.Cells(1, 35))
+                    Inz.setAttributeNode rel
+                    
+                    'Ku_val
+                    Set Ku = XDoc.createElement("Ku_dprtm")
+                    Dprtm_values.appendChild Ku
+                    Set rel = XDoc.createAttribute("val_1")
+                    rel.NodeValue = CStr(rw.Cells(1, 12))
+                    Ku.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_2")
+                    rel.NodeValue = CStr(rw.Cells(1, 24))
+                    Ku.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_3")
+                    rel.NodeValue = CStr(rw.Cells(1, 36))
+                    Ku.setAttributeNode rel
+                    
+                    'Sni_val
+                    Set Sni = XDoc.createElement("Sni_dprtm")
+                    Dprtm_values.appendChild Sni
+                    Set rel = XDoc.createAttribute("val_1")
+                    rel.NodeValue = CStr(rw.Cells(1, 13))
+                    Sni.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_2")
+                    rel.NodeValue = CStr(rw.Cells(1, 25))
+                    Sni.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_3")
+                    rel.NodeValue = CStr(rw.Cells(1, 37))
+                    Sni.setAttributeNode rel
+                    
+                    'Socdi_val
+                    Set Socdi = XDoc.createElement("Socdi_dprtm")
+                    Dprtm_values.appendChild Socdi
+                    Set rel = XDoc.createAttribute("val_1")
+                    rel.NodeValue = CStr(rw.Cells(1, 14))
+                    Socdi.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_2")
+                    rel.NodeValue = CStr(rw.Cells(1, 26))
+                    Socdi.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_3")
+                    rel.NodeValue = CStr(rw.Cells(1, 38))
+                    Socdi.setAttributeNode rel
+                    
+                    'Fr2_val
+            '        Set rel = XDoc.createAttribute("val_1")
+            '        rel.NodeValue = CStr(rw.Cells(1, 11))
+            '        Insrns_Pmnt.setAttributeNode rel
+            '        Set rel = XDoc.createAttribute("val_2")
+            '        rel.NodeValue = CStr(rw.Cells(1, 23))
+            '        Insrns_Pmnt.setAttributeNode rel
+            '        Set rel = XDoc.createAttribute("val_3")
+            '        rel.NodeValue = CStr(rw.Cells(1, 35))
+            '        Insrns_Pmnt.setAttributeNode rel
+                    
+                    'Us_val
+                    Set Us = XDoc.createElement("Us_dprtm")
+                    Dprtm_values.appendChild Us
+                    Set rel = XDoc.createAttribute("val_1")
+                    rel.NodeValue = CStr(rw.Cells(1, 16))
+                    Us.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_2")
+                    rel.NodeValue = CStr(rw.Cells(1, 28))
+                    Us.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_3")
+                    rel.NodeValue = CStr(rw.Cells(1, 40))
+                    Us.setAttributeNode rel
+                    
+                    'Tu_val
+                    Set Tu = XDoc.createElement("Tu_dprtm")
+                    Dprtm_values.appendChild Tu
+                    Set rel = XDoc.createAttribute("val_1")
+                    rel.NodeValue = CStr(rw.Cells(1, 17))
+                    Tu.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_2")
+                    rel.NodeValue = CStr(rw.Cells(1, 29))
+                    Tu.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_3")
+                    rel.NodeValue = CStr(rw.Cells(1, 41))
+                    Tu.setAttributeNode rel
+                    
+                    'Othr_Pmnt_val
+                    Set Othr_Pmnt = XDoc.createElement("Othr_Pmnt_Ot2_dprtm")
+                    Dprtm_values.appendChild Othr_Pmnt
+                    Set rel = XDoc.createAttribute("val_1")
+                    rel.NodeValue = CStr(rw.Cells(1, 18))
+                    Othr_Pmnt.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_2")
+                    rel.NodeValue = CStr(rw.Cells(1, 30))
+                    Othr_Pmnt.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_3")
+                    rel.NodeValue = CStr(rw.Cells(1, 42))
+                    Othr_Pmnt.setAttributeNode rel
+                    
+                    'Pnz_val
+                    Set Pnz = XDoc.createElement("Pnz_dprtm")
+                    Dprtm_values.appendChild Pnz
+                    Set rel = XDoc.createAttribute("val_1")
+                    rel.NodeValue = CStr(rw.Cells(1, 19))
+                    Pnz.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_2")
+                    rel.NodeValue = CStr(rw.Cells(1, 31))
+                    Pnz.setAttributeNode rel
+                    Set rel = XDoc.createAttribute("val_3")
+                    rel.NodeValue = CStr(rw.Cells(1, 43))
+                    Pnz.setAttributeNode rel
+                    
+                    Set Kbk_codes = XDoc.createElement("Kbk_codes")
+                    Dprtm_values.appendChild Kbk_codes
+                    
+                    Set Kbk_code = XDoc.createElement("Kbk_code")
+                    Kbk_codes.appendChild Kbk_code
+                    
+                    Kbk_code.Text = RemoveWhiteSpace(CStr(rw.Cells(1, 1)))
+                End If
         End If
         RowCount = RowCount + 1
     Next rw
@@ -1236,6 +1252,7 @@ End Sub
 
 Sub WriteXMLFileForOFO(ws_xml As Worksheet, wb As Workbook)
     
+        
     Dim SortRange As String
 
     SortRange = ws_xml.Cells(Cells.Rows.Count, "A").End(xlUp).Row
@@ -1278,10 +1295,14 @@ Sub WriteXMLFileForOFO(ws_xml As Worksheet, wb As Workbook)
     root.appendChild Inst_kpp
     Inst_kpp.Text = "770901001"
     
+    Set Inst_code = XDoc.createElement("Inst_code")
+    root.appendChild Inst_code
+    Inst_code.Text = "00100777"
+    'Inst_code.Text = Inst_inn.Text + Inst_kpp.Text
+    
     Set Dprtm_records = XDoc.createElement("Dprtm_records")
     root.appendChild Dprtm_records
             
-    
                     
     For Each rw In ws_xml.Rows
         If RowCount > 0 Then
@@ -1314,77 +1335,83 @@ Sub WriteXMLFileForOFO(ws_xml As Worksheet, wb As Workbook)
             Else
                 isTheSame = True
             End If
-            If Not isTheSame Then
-                Set Dprtm_record = XDoc.createElement("Dprtm_record")
-                Dprtm_records.appendChild Dprtm_record
-                
-                Set Dprtm_code = XDoc.createElement("Dprtm_code")
-                Dprtm_record.appendChild Dprtm_code
-                Dprtm_code.Text = ""
-                
-                Set Dprtm_name = XDoc.createElement("Dprtm_name")
-                Dprtm_record.appendChild Dprtm_name
-                Dprtm_name.Text = CStr(rw.Cells(1, 3))
-                
-                Set Dprtm_inn = XDoc.createElement("Dprtm_inn")
-                Dprtm_record.appendChild Dprtm_inn
-                Dprtm_inn.Text = CStr(rw.Cells(1, 4))
-                
-                Set Dprtm_kpp = XDoc.createElement("Dprtm_kpp")
-                Dprtm_record.appendChild Dprtm_kpp
-                Dprtm_kpp.Text = CStr(rw.Cells(1, 80))
-                
-                Set Srvc_records = XDoc.createElement("Srvc_records")
-                Dprtm_record.appendChild Srvc_records
-                                
-            End If
             
-            Set Srvc_record = XDoc.createElement("Srvc_record")
-            Srvc_records.appendChild Srvc_record
-                
-            'RegNumber
-            Set RegNumber = XDoc.createElement("RegNumber")
-            Srvc_record.appendChild RegNumber
-                
             strRegNumber = RemoveWhiteSpace(CStr(rw.Cells(1, 81)))
-            newStrRegNumber = getStringBeforeSpace(strRegNumber, "_")
-            RegNumber.Text = newStrRegNumber
+            isGood = True
+            If strRegNumber = "" Then
+                isGood = False
+            End If
+            If isGood Then
+                If Not isTheSame Then
+                    Set Dprtm_record = XDoc.createElement("Dprtm_record")
+                    Dprtm_records.appendChild Dprtm_record
+                    
+                    Set Dprtm_code = XDoc.createElement("Dprtm_code")
+                    Dprtm_record.appendChild Dprtm_code
+                    Dprtm_code.Text = CStr(rw.Cells(1, 89))
+                    
+                    Set Dprtm_name = XDoc.createElement("Dprtm_name")
+                    Dprtm_record.appendChild Dprtm_name
+                    Dprtm_name.Text = CStr(rw.Cells(1, 3))
+                    
+                    Set Dprtm_inn = XDoc.createElement("Dprtm_inn")
+                    Dprtm_record.appendChild Dprtm_inn
+                    Dprtm_inn.Text = CStr(rw.Cells(1, 4))
+                    
+                    Set Dprtm_kpp = XDoc.createElement("Dprtm_kpp")
+                    Dprtm_record.appendChild Dprtm_kpp
+                    Dprtm_kpp.Text = CStr(rw.Cells(1, 80))
+                    
+                    Set Srvc_records = XDoc.createElement("Srvc_records")
+                    Dprtm_record.appendChild Srvc_records
+                                    
+                End If
                 
-            'Vlm_indctr_records
-            Set Vlm_indctr_records = XDoc.createElement("Vlm_indctr_records")
-            Srvc_record.appendChild Vlm_indctr_records
-            'Vlm_indctr_record
-            Set Vlm_indctr_record = XDoc.createElement("Vlm_indctr_record")
-            Vlm_indctr_records.appendChild Vlm_indctr_record
-            'Vlm_indctr_code
-            Set Vlm_indctr_code = XDoc.createElement("Vlm_indctr_code")
-            Vlm_indctr_record.appendChild Vlm_indctr_code
-            Vlm_indctr_code.Text = CStr(Format(rw.Cells(1, 86), "000"))
-            'Vlm_indctr_name
-            Set Vlm_indctr_name = XDoc.createElement("Vlm_indctr_name")
-            Vlm_indctr_record.appendChild Vlm_indctr_name
-            Vlm_indctr_name.Text = CStr(rw.Cells(1, 82))
-            'Vlm_indctr_name_1
-            Set Vlm_indctr_name_1 = XDoc.createElement("Vlm_indctr_name_1")
-            Vlm_indctr_record.appendChild Vlm_indctr_name_1
-            Vlm_indctr_name_1.Text = FindNameOKEI(CStr(rw.Cells(1, 85)), wb)
-            'Value_1
-            Set Value_1 = XDoc.createElement("Value_1")
-            Vlm_indctr_record.appendChild Value_1
-            Value_1.Text = CStr(rw.Cells(1, 5))
-            'Value_2
-            Set Value_2 = XDoc.createElement("Value_2")
-            Vlm_indctr_record.appendChild Value_2
-            Value_2.Text = CStr(rw.Cells(1, 6))
-            'Value_3
-            Set Value_3 = XDoc.createElement("Value_3")
-            Vlm_indctr_record.appendChild Value_3
-            Value_3.Text = CStr(rw.Cells(1, 7))
-            'Kbk_code
-            Set Kbk_code = XDoc.createElement("Kbk_code")
-            Vlm_indctr_record.appendChild Kbk_code
-            Kbk_code.Text = RemoveWhiteSpace(CStr(rw.Cells(1, 1)))
-                 
+                Set Srvc_record = XDoc.createElement("Srvc_record")
+                Srvc_records.appendChild Srvc_record
+                    
+                'RegNumber
+                Set RegNumber = XDoc.createElement("RegNumber")
+                Srvc_record.appendChild RegNumber
+                    
+                newStrRegNumber = getStringBeforeSpace(strRegNumber, "_")
+                RegNumber.Text = newStrRegNumber
+                    
+                'Vlm_indctr_records
+                Set Vlm_indctr_records = XDoc.createElement("Vlm_indctr_records")
+                Srvc_record.appendChild Vlm_indctr_records
+                'Vlm_indctr_record
+                Set Vlm_indctr_record = XDoc.createElement("Vlm_indctr_record")
+                Vlm_indctr_records.appendChild Vlm_indctr_record
+                'Vlm_indctr_code
+                Set Vlm_indctr_code = XDoc.createElement("Vlm_indctr_code")
+                Vlm_indctr_record.appendChild Vlm_indctr_code
+                Vlm_indctr_code.Text = CStr(Format(rw.Cells(1, 86), "000"))
+                'Vlm_indctr_name
+                Set Vlm_indctr_name = XDoc.createElement("Vlm_indctr_name")
+                Vlm_indctr_record.appendChild Vlm_indctr_name
+                Vlm_indctr_name.Text = CStr(rw.Cells(1, 82))
+                'Vlm_indctr_name_1
+                Set Vlm_indctr_name_1 = XDoc.createElement("Vlm_indctr_name_1")
+                Vlm_indctr_record.appendChild Vlm_indctr_name_1
+                Vlm_indctr_name_1.Text = FindNameOKEI(CStr(rw.Cells(1, 85)), wb)
+                'Value_1
+                Set Value_1 = XDoc.createElement("Value_1")
+                Vlm_indctr_record.appendChild Value_1
+                Value_1.Text = GetValueWithZero(rw.Cells(1, 5))
+                'Value_2
+                Set Value_2 = XDoc.createElement("Value_2")
+                Vlm_indctr_record.appendChild Value_2
+                Value_2.Text = GetValueWithZero(rw.Cells(1, 6))
+                'Value_3
+                Set Value_3 = XDoc.createElement("Value_3")
+                Vlm_indctr_record.appendChild Value_3
+                Value_3.Text = GetValueWithZero(rw.Cells(1, 7))
+                'Kbk_code
+                Set Kbk_code = XDoc.createElement("Kbk_code")
+                Vlm_indctr_record.appendChild Kbk_code
+                Kbk_code.Text = RemoveWhiteSpace(CStr(rw.Cells(1, 1)))
+            End If
         End If
         RowCount = RowCount + 1
     Next rw
