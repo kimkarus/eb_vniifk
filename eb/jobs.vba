@@ -50,82 +50,82 @@ Sub SetSheetHeadsXML(ws_xml As Worksheet)
     'Values
     'ws_xml.Range("E2:G2").Value = ws.Range("D8:F8").Value
     'KBK 1
-    ws_xml.Range("A1").Value = "Kbk_code"
+    ws_xml.Range("A1").value = "Kbk_code"
     '1
     'G - ОТ1 - H = 7
-    ws_xml.Range("H1").Value = "Insrns_Pmnt_val_1"
+    ws_xml.Range("H1").value = "Insrns_Pmnt_val_1"
     'H - МЗ - I = 8
-    ws_xml.Range("I1").Value = "Mz_val_1"
+    ws_xml.Range("I1").value = "Mz_val_1"
     'I - ФР1 - J = 9
-    ws_xml.Range("J1").Value = "Fr_val_1"
+    ws_xml.Range("J1").value = "Fr_val_1"
     'J - ИНЗ - K = 10
-    ws_xml.Range("K1").Value = "Inz_val_1"
+    ws_xml.Range("K1").value = "Inz_val_1"
     'K - КУ - L = 11
-    ws_xml.Range("L1").Value = "Ku_val_1"
+    ws_xml.Range("L1").value = "Ku_val_1"
     'L - СНИ - M = 12
-    ws_xml.Range("M1").Value = "Sni_val_1"
+    ws_xml.Range("M1").value = "Sni_val_1"
     'M - СОЦДИ - N = 13
-    ws_xml.Range("N1").Value = "Socdi_val_1"
+    ws_xml.Range("N1").value = "Socdi_val_1"
     'N - ФР2 - O = 14
-    ws_xml.Range("O1").Value = "Fr2_val_1"
+    ws_xml.Range("O1").value = "Fr2_val_1"
     'O - УС - P = 15
-    ws_xml.Range("P1").Value = "Us_val_1"
+    ws_xml.Range("P1").value = "Us_val_1"
     'P - ТУ - Q = 16
-    ws_xml.Range("Q1").Value = "Tu_val_1"
+    ws_xml.Range("Q1").value = "Tu_val_1"
     'Q - ОТ2 - R = 17
-    ws_xml.Range("R1").Value = "Othr_Pmnt_val_1"
+    ws_xml.Range("R1").value = "Othr_Pmnt_val_1"
     'R - ПНЗ - S = 18
-    ws_xml.Range("S1").Value = "Pnz_val_1"
+    ws_xml.Range("S1").value = "Pnz_val_1"
     '2
     'G - ОТ1 - T = 19
-    ws_xml.Range("T1").Value = "Insrns_Pmnt_val_2"
+    ws_xml.Range("T1").value = "Insrns_Pmnt_val_2"
     'H - МЗ - U = 20
-    ws_xml.Range("U1").Value = "Mz_val_2"
+    ws_xml.Range("U1").value = "Mz_val_2"
     'I - ФР1 - V = 21
-     ws_xml.Range("V1").Value = "Fr_val_2"
+     ws_xml.Range("V1").value = "Fr_val_2"
     'J - ИНЗ - W = 22
-    ws_xml.Range("W1").Value = "Inz_val_2"
+    ws_xml.Range("W1").value = "Inz_val_2"
     'K - КУ - X = 23
-    ws_xml.Range("X1").Value = "Ku_val_2"
+    ws_xml.Range("X1").value = "Ku_val_2"
     'L - СНИ - Y = 24
-    ws_xml.Range("Y1").Value = "Sni_val_2"
+    ws_xml.Range("Y1").value = "Sni_val_2"
     'M - СОЦДИ - Z = 25
-    ws_xml.Range("Z1").Value = "Socdi_val_2"
+    ws_xml.Range("Z1").value = "Socdi_val_2"
     'N - ФР2 - AA = 26
-    ws_xml.Range("AA1").Value = "Fr2_val_2"
+    ws_xml.Range("AA1").value = "Fr2_val_2"
     'O - УС - AB = 27
-    ws_xml.Range("AB1").Value = "Us_val_2"
+    ws_xml.Range("AB1").value = "Us_val_2"
     'P - ТУ - AC = 28
-    ws_xml.Range("AC1").Value = "Tu_val_2"
+    ws_xml.Range("AC1").value = "Tu_val_2"
     'Q - ОТ2 - AD = 29
-    ws_xml.Range("AD1").Value = "Othr_Pmnt_val_2"
+    ws_xml.Range("AD1").value = "Othr_Pmnt_val_2"
     'R - ПНЗ - AE = 30
-    ws_xml.Range("AE1").Value = "Pnz_val_2"
+    ws_xml.Range("AE1").value = "Pnz_val_2"
     '3
     'G - ОТ1 - AF = 31
-    ws_xml.Range("AF1").Value = "Insrns_Pmnt_val_3"
+    ws_xml.Range("AF1").value = "Insrns_Pmnt_val_3"
     'H - МЗ - AG = 32
-    ws_xml.Range("AG1").Value = "Mz_val_3"
+    ws_xml.Range("AG1").value = "Mz_val_3"
     'I - ФР1 - AH = 33
-    ws_xml.Range("AH1").Value = "Fr_val_3"
+    ws_xml.Range("AH1").value = "Fr_val_3"
     'J - ИНЗ - AI = 34
-    ws_xml.Range("AI1").Value = "Inz_val_3"
+    ws_xml.Range("AI1").value = "Inz_val_3"
     'K - КУ - AJ = 35
-    ws_xml.Range("AJ1").Value = "Ku_val_3"
+    ws_xml.Range("AJ1").value = "Ku_val_3"
     'L - СНИ - AK = 36
-    ws_xml.Range("AK1").Value = "Sni_val_3"
+    ws_xml.Range("AK1").value = "Sni_val_3"
     'M - СОЦДИ - AL = 37
-    ws_xml.Range("AL1").Value = "Socdi_val_3"
+    ws_xml.Range("AL1").value = "Socdi_val_3"
     'N - ФР2 - AM = 38
-    ws_xml.Range("AM1").Value = "Fr2_val_3"
+    ws_xml.Range("AM1").value = "Fr2_val_3"
     'O - УС - AN = 39
-    ws_xml.Range("AN1").Value = "Us_val_3"
+    ws_xml.Range("AN1").value = "Us_val_3"
     'P - ТУ - AO = 40
-    ws_xml.Range("AO1").Value = "Tu_val_3"
+    ws_xml.Range("AO1").value = "Tu_val_3"
     'Q - ОТ2 - AP = 41
-    ws_xml.Range("AP1").Value = "Othr_Pmnt_val_3"
+    ws_xml.Range("AP1").value = "Othr_Pmnt_val_3"
     'R - ПНЗ - AQ = 42
-    ws_xml.Range("AQ1").Value = "Pnz_val_3"
+    ws_xml.Range("AQ1").value = "Pnz_val_3"
     'NAME
     'ws_xml.Range("B2").Value = ws.Range("A7").Value
     
@@ -138,10 +138,10 @@ Sub FillXMLTableFromServiceTable(wb As Workbook, ws_xml, ws As Worksheet, rowSta
     Dim ws_regNumbers As Worksheet
     Set ws_regNumbers = wb.Sheets("RegNumbers")
     For i = rowStart To rowEnd
-        ws_xml.Cells(i, 3).Value = ws.Range("D2").Value
-        ws_xml.Cells(i, 4).Value = ws.Range("N2").Value
-        ws_xml.Cells(i, 80).Value = ws.Range("O2").Value
-        ws_xml.Cells(i, 87).Value = ws.Range("P2").Value
+        ws_xml.Cells(i, 3).value = ws.Range("D2").value
+        ws_xml.Cells(i, 4).value = ws.Range("N2").value
+        ws_xml.Cells(i, 80).value = ws.Range("O2").value
+        ws_xml.Cells(i, 87).value = ws.Range("P2").value
         Dim RowCount As Integer
         RowCount = 0
         Dim RegNumber, IndicatorName, OkeiName, BaseCode, IndCode, OkeiCode, RegName As String
@@ -153,31 +153,31 @@ Sub FillXMLTableFromServiceTable(wb As Workbook, ws_xml, ws As Worksheet, rowSta
         OkeiCode = ""
         RegName = ""
         For Each rw In ws_regNumbers.Rows
-            If Trim(CStr(ws_xml.Cells(i, 81).Value)) = Trim(CStr(rw.Cells(1, 2).Value)) Then
+            If Trim(CStr(ws_xml.Cells(i, 81).value)) = Trim(CStr(rw.Cells(1, 2).value)) Then
                 'RegNumber = CStr(rw.Cells(1, 2).Value)
-                RegName = CStr(rw.Cells(1, 1).Value)
-                IndicatorName = CStr(rw.Cells(1, 3).Value)
-                OkeiName = CStr(rw.Cells(1, 4).Value)
-                OkeiCode = CStr(rw.Cells(1, 8).Value)
-                BaseCode = CStr(rw.Cells(1, 5).Value)
-                IndCode = CStr(rw.Cells(1, 9).Value)
-                DateFrom = CStr(rw.Cells(1, 6).Value)
-                DateBefore = CStr(rw.Cells(1, 7).Value)
+                RegName = CStr(rw.Cells(1, 1).value)
+                IndicatorName = CStr(rw.Cells(1, 3).value)
+                OkeiName = CStr(rw.Cells(1, 4).value)
+                OkeiCode = CStr(rw.Cells(1, 8).value)
+                BaseCode = CStr(rw.Cells(1, 5).value)
+                IndCode = CStr(rw.Cells(1, 9).value)
+                DateFrom = CStr(rw.Cells(1, 6).value)
+                DateBefore = CStr(rw.Cells(1, 7).value)
                 Exit For
             End If
-            If CStr(rw.Cells(1, 1).Value) = "" Then
+            If CStr(rw.Cells(1, 1).value) = "" Then
                 Exit For
             End If
         Next rw
        ' ws_xml.Cells(i, 81).Value = RegNumber
-        ws_xml.Cells(i, 2).Value = RegName
-        ws_xml.Cells(i, 82).Value = IndicatorName
-        ws_xml.Cells(i, 83).Value = OkeiName
-        ws_xml.Cells(i, 84).Value = BaseCode
-        ws_xml.Cells(i, 85).Value = OkeiCode
-        ws_xml.Cells(i, 86).Value = IndCode
-        ws_xml.Cells(i, 87).Value = DateFrom
-        ws_xml.Cells(i, 88).Value = DateBefore
+        ws_xml.Cells(i, 2).value = RegName
+        ws_xml.Cells(i, 82).value = IndicatorName
+        ws_xml.Cells(i, 83).value = OkeiName
+        ws_xml.Cells(i, 84).value = BaseCode
+        ws_xml.Cells(i, 85).value = OkeiCode
+        ws_xml.Cells(i, 86).value = IndCode
+        ws_xml.Cells(i, 87).value = DateFrom
+        ws_xml.Cells(i, 88).value = DateBefore
     Next i
 End Sub
 Sub FillXMLTableForCSP(nameSheet As String, wb As Workbook, ws_xml As Worksheet)
@@ -195,241 +195,241 @@ Sub FillXMLTableForCSP(nameSheet As String, wb As Workbook, ws_xml As Worksheet)
     'На территории Российской Федерации
     '1
     'Plan
-    ws_xml.Range("AR2:BC2").Value = ws.Range("G7:R7").Value
-    ws_xml.Range("BD2:BO2").Value = ws.Range("G7:R7").Value
-    ws_xml.Range("BP2:CA2").Value = ws.Range("G7:R7").Value
+    ws_xml.Range("AR2:BC2").value = ws.Range("G7:R7").value
+    ws_xml.Range("BD2:BO2").value = ws.Range("G7:R7").value
+    ws_xml.Range("BP2:CA2").value = ws.Range("G7:R7").value
     'Current
-    ws_xml.Range("H2:S2").Value = ws.Range("G8:R8").Value
-    ws_xml.Range("T2:AE2").Value = ws.Range("G8:R8").Value
-    ws_xml.Range("AF2:AQ2").Value = ws.Range("G8:R8").Value
+    ws_xml.Range("H2:S2").value = ws.Range("G8:R8").value
+    ws_xml.Range("T2:AE2").value = ws.Range("G8:R8").value
+    ws_xml.Range("AF2:AQ2").value = ws.Range("G8:R8").value
     'RegNumber
-    ws_xml.Range("CC2").Value = ws.Range("V7").Value
+    ws_xml.Range("CC2").value = ws.Range("V7").value
     'Values
-    ws_xml.Range("E2:G2").Value = ws.Range("D8:F8").Value
+    ws_xml.Range("E2:G2").value = ws.Range("D8:F8").value
     'KBK
-    ws_xml.Range("A2").Value = ws.Range("A49").Value
+    ws_xml.Range("A2").value = ws.Range("A49").value
     'NAME
-    ws_xml.Range("B2").Value = ws.Range("A7").Value
+    ws_xml.Range("B2").value = ws.Range("A7").value
     
     '2
     'Plan
-    ws_xml.Range("AR3:BC3").Value = ws.Range("G9:R9").Value
-    ws_xml.Range("BD3:BO3").Value = ws.Range("G9:R9").Value
-    ws_xml.Range("BP3:CA3").Value = ws.Range("G9:R9").Value
+    ws_xml.Range("AR3:BC3").value = ws.Range("G9:R9").value
+    ws_xml.Range("BD3:BO3").value = ws.Range("G9:R9").value
+    ws_xml.Range("BP3:CA3").value = ws.Range("G9:R9").value
     'Current
-    ws_xml.Range("H3:S3").Value = ws.Range("G10:R10").Value
-    ws_xml.Range("T3:AE3").Value = ws.Range("G10:R10").Value
-    ws_xml.Range("AF3:AQ3").Value = ws.Range("G10:R10").Value
+    ws_xml.Range("H3:S3").value = ws.Range("G10:R10").value
+    ws_xml.Range("T3:AE3").value = ws.Range("G10:R10").value
+    ws_xml.Range("AF3:AQ3").value = ws.Range("G10:R10").value
     'RegNumber
-    ws_xml.Range("CC3").Value = ws.Range("V10").Value
+    ws_xml.Range("CC3").value = ws.Range("V10").value
     'Values
-    ws_xml.Range("E3:G3").Value = ws.Range("D10:F10").Value
+    ws_xml.Range("E3:G3").value = ws.Range("D10:F10").value
     'KBK
-    ws_xml.Range("A3").Value = ws.Range("A49").Value
+    ws_xml.Range("A3").value = ws.Range("A49").value
     'NAME
-    ws_xml.Range("B3").Value = ws.Range("A7").Value
+    ws_xml.Range("B3").value = ws.Range("A7").value
     'RegNumber
-    ws_xml.Range("CC2").Value = ws.Range("V7").Value
+    ws_xml.Range("CC2").value = ws.Range("V7").value
     'Обеспечение участия сборных команд Российской федерации в международных спортивных соревнованиях, Олимпийских играх.
     'За пределами территории Российской Федерации
     '1
     'Plan
-    ws_xml.Range("AR4:BC4").Value = ws.Range("G14:R14").Value
-    ws_xml.Range("BD4:BO4").Value = ws.Range("G14:R14").Value
-    ws_xml.Range("BP4:CA4").Value = ws.Range("G14:R14").Value
+    ws_xml.Range("AR4:BC4").value = ws.Range("G14:R14").value
+    ws_xml.Range("BD4:BO4").value = ws.Range("G14:R14").value
+    ws_xml.Range("BP4:CA4").value = ws.Range("G14:R14").value
     'Current
-    ws_xml.Range("H4:S4").Value = ws.Range("G15:R15").Value
-    ws_xml.Range("T4:AE4").Value = ws.Range("G15:R15").Value
-    ws_xml.Range("AF4:AQ4").Value = ws.Range("G15:R15").Value
+    ws_xml.Range("H4:S4").value = ws.Range("G15:R15").value
+    ws_xml.Range("T4:AE4").value = ws.Range("G15:R15").value
+    ws_xml.Range("AF4:AQ4").value = ws.Range("G15:R15").value
     'RegNumber
-    ws_xml.Range("CC4").Value = ws.Range("V15").Value
+    ws_xml.Range("CC4").value = ws.Range("V15").value
     'Values
-    ws_xml.Range("E4:G4").Value = ws.Range("D15:F15").Value
+    ws_xml.Range("E4:G4").value = ws.Range("D15:F15").value
     'KBK
-    ws_xml.Range("A4").Value = ws.Range("A49").Value
+    ws_xml.Range("A4").value = ws.Range("A49").value
     'NAME
-    ws_xml.Range("B4").Value = ws.Range("A7").Value
+    ws_xml.Range("B4").value = ws.Range("A7").value
     '2
     'Plan
-    ws_xml.Range("AR5:BC5").Value = ws.Range("G16:R16").Value
-    ws_xml.Range("BD5:BO5").Value = ws.Range("G16:R16").Value
-    ws_xml.Range("BP5:CA5").Value = ws.Range("G16:R16").Value
+    ws_xml.Range("AR5:BC5").value = ws.Range("G16:R16").value
+    ws_xml.Range("BD5:BO5").value = ws.Range("G16:R16").value
+    ws_xml.Range("BP5:CA5").value = ws.Range("G16:R16").value
     'Current
-    ws_xml.Range("H5:S5").Value = ws.Range("G17:R17").Value
-    ws_xml.Range("T5:AE5").Value = ws.Range("G18:R18").Value
-    ws_xml.Range("AF5:AQ5").Value = ws.Range("G19:R19").Value
+    ws_xml.Range("H5:S5").value = ws.Range("G17:R17").value
+    ws_xml.Range("T5:AE5").value = ws.Range("G18:R18").value
+    ws_xml.Range("AF5:AQ5").value = ws.Range("G19:R19").value
     'RegNumber
-    ws_xml.Range("CC5").Value = ws.Range("V19").Value
+    ws_xml.Range("CC5").value = ws.Range("V19").value
     'Values
-    ws_xml.Range("E5").Value = ws.Range("D17").Value
-    ws_xml.Range("F5").Value = ws.Range("E18").Value
-    ws_xml.Range("G5").Value = ws.Range("F19").Value
+    ws_xml.Range("E5").value = ws.Range("D17").value
+    ws_xml.Range("F5").value = ws.Range("E18").value
+    ws_xml.Range("G5").value = ws.Range("F19").value
     'KBK
-    ws_xml.Range("A5").Value = ws.Range("A49").Value
+    ws_xml.Range("A5").value = ws.Range("A49").value
     'NAME
-    ws_xml.Range("B5").Value = ws.Range("A7").Value
+    ws_xml.Range("B5").value = ws.Range("A7").value
     'Организация и проведение официальных спортивных мероприятий.
     'Международные, на территории Российской Федерации
     '1
     'Plan
-    ws_xml.Range("AR6:BC6").Value = ws.Range("G23:R23").Value
-    ws_xml.Range("BD6:BO6").Value = ws.Range("G23:R23").Value
-    ws_xml.Range("BP6:CA6").Value = ws.Range("G23:R23").Value
+    ws_xml.Range("AR6:BC6").value = ws.Range("G23:R23").value
+    ws_xml.Range("BD6:BO6").value = ws.Range("G23:R23").value
+    ws_xml.Range("BP6:CA6").value = ws.Range("G23:R23").value
     'Current
-    ws_xml.Range("H6:S6").Value = ws.Range("G24:R24").Value
-    ws_xml.Range("T6:AE6").Value = ws.Range("G24:R24").Value
-    ws_xml.Range("AF6:AQ6").Value = ws.Range("G24:R24").Value
+    ws_xml.Range("H6:S6").value = ws.Range("G24:R24").value
+    ws_xml.Range("T6:AE6").value = ws.Range("G24:R24").value
+    ws_xml.Range("AF6:AQ6").value = ws.Range("G24:R24").value
     'RegNumber
-    ws_xml.Range("CC6").Value = ws.Range("V24").Value
+    ws_xml.Range("CC6").value = ws.Range("V24").value
     'Values
-    ws_xml.Range("E6:G6").Value = ws.Range("D24:F24").Value
+    ws_xml.Range("E6:G6").value = ws.Range("D24:F24").value
     'KBK
-    ws_xml.Range("A6").Value = ws.Range("A49").Value
+    ws_xml.Range("A6").value = ws.Range("A49").value
     'NAME
-    ws_xml.Range("B6").Value = ws.Range("A23").Value
+    ws_xml.Range("B6").value = ws.Range("A23").value
     'Всероссийские, на территории Российской Федерации
     '2
     'Plan
-    ws_xml.Range("AR7:BC7").Value = ws.Range("G25:R25").Value
-    ws_xml.Range("BD7:BO7").Value = ws.Range("G25:R25").Value
-    ws_xml.Range("BP7:CA7").Value = ws.Range("G25:R25").Value
+    ws_xml.Range("AR7:BC7").value = ws.Range("G25:R25").value
+    ws_xml.Range("BD7:BO7").value = ws.Range("G25:R25").value
+    ws_xml.Range("BP7:CA7").value = ws.Range("G25:R25").value
     'Current
-    ws_xml.Range("H7:S7").Value = ws.Range("G26:R26").Value
-    ws_xml.Range("T7:AE7").Value = ws.Range("G26:R26").Value
-    ws_xml.Range("AF7:AQ7").Value = ws.Range("G26:R26").Value
+    ws_xml.Range("H7:S7").value = ws.Range("G26:R26").value
+    ws_xml.Range("T7:AE7").value = ws.Range("G26:R26").value
+    ws_xml.Range("AF7:AQ7").value = ws.Range("G26:R26").value
     'RegNumber
-    ws_xml.Range("CC7").Value = ws.Range("V26").Value
+    ws_xml.Range("CC7").value = ws.Range("V26").value
     'Values
-    ws_xml.Range("E7:G7").Value = ws.Range("D26:F26").Value
+    ws_xml.Range("E7:G7").value = ws.Range("D26:F26").value
     'KBK
-    ws_xml.Range("A7").Value = ws.Range("A49").Value
+    ws_xml.Range("A7").value = ws.Range("A49").value
     'NAME
-    ws_xml.Range("B7").Value = ws.Range("A23").Value
+    ws_xml.Range("B7").value = ws.Range("A23").value
     'Организация мероприятий по подготовке спортивных сборных команд.
     '
     '1
     'Plan
-    ws_xml.Range("AR8:BC8").Value = ws.Range("G28:R28").Value
-    ws_xml.Range("BD8:BO8").Value = ws.Range("G28:R28").Value
-    ws_xml.Range("BP8:CA8").Value = ws.Range("G28:R28").Value
+    ws_xml.Range("AR8:BC8").value = ws.Range("G28:R28").value
+    ws_xml.Range("BD8:BO8").value = ws.Range("G28:R28").value
+    ws_xml.Range("BP8:CA8").value = ws.Range("G28:R28").value
     'Current
-    ws_xml.Range("H8:S8").Value = ws.Range("G29:R29").Value
-    ws_xml.Range("T8:AE8").Value = ws.Range("G29:R29").Value
-    ws_xml.Range("AF8:AQ8").Value = ws.Range("G29:R29").Value
+    ws_xml.Range("H8:S8").value = ws.Range("G29:R29").value
+    ws_xml.Range("T8:AE8").value = ws.Range("G29:R29").value
+    ws_xml.Range("AF8:AQ8").value = ws.Range("G29:R29").value
     'RegNumber
-    ws_xml.Range("CC8").Value = ws.Range("V29").Value
+    ws_xml.Range("CC8").value = ws.Range("V29").value
     'Values
-    ws_xml.Range("E8:G8").Value = ws.Range("D29:F29").Value
+    ws_xml.Range("E8:G8").value = ws.Range("D29:F29").value
     'KBK
-    ws_xml.Range("A8").Value = ws.Range("A49").Value
+    ws_xml.Range("A8").value = ws.Range("A49").value
     'NAME
-    ws_xml.Range("B8").Value = ws.Range("A28").Value
+    ws_xml.Range("B8").value = ws.Range("A28").value
     '2
     'Plan
-    ws_xml.Range("AR9:BC9").Value = ws.Range("G30:R30").Value
-    ws_xml.Range("BD9:BO9").Value = ws.Range("G30:R30").Value
-    ws_xml.Range("BP9:CA9").Value = ws.Range("G30:R30").Value
+    ws_xml.Range("AR9:BC9").value = ws.Range("G30:R30").value
+    ws_xml.Range("BD9:BO9").value = ws.Range("G30:R30").value
+    ws_xml.Range("BP9:CA9").value = ws.Range("G30:R30").value
     'Current
-    ws_xml.Range("H9:S9").Value = ws.Range("G31:R31").Value
-    ws_xml.Range("T9:AE9").Value = ws.Range("G31:R31").Value
-    ws_xml.Range("AF9:AQ9").Value = ws.Range("G31:R31").Value
+    ws_xml.Range("H9:S9").value = ws.Range("G31:R31").value
+    ws_xml.Range("T9:AE9").value = ws.Range("G31:R31").value
+    ws_xml.Range("AF9:AQ9").value = ws.Range("G31:R31").value
     'RegNumber
-    ws_xml.Range("CC9").Value = ws.Range("V31").Value
+    ws_xml.Range("CC9").value = ws.Range("V31").value
     'Values
-    ws_xml.Range("E9:G9").Value = ws.Range("D31:F31").Value
+    ws_xml.Range("E9:G9").value = ws.Range("D31:F31").value
     'KBK
-    ws_xml.Range("A9").Value = ws.Range("A49").Value
+    ws_xml.Range("A9").value = ws.Range("A49").value
     'NAME
-    ws_xml.Range("B9").Value = ws.Range("A28").Value
+    ws_xml.Range("B9").value = ws.Range("A28").value
     '3
     'Plan
-    ws_xml.Range("AR10:BC10").Value = ws.Range("G32:R32").Value
-    ws_xml.Range("BD10:BO10").Value = ws.Range("G32:R32").Value
-    ws_xml.Range("BP10:CA10").Value = ws.Range("G32:R32").Value
+    ws_xml.Range("AR10:BC10").value = ws.Range("G32:R32").value
+    ws_xml.Range("BD10:BO10").value = ws.Range("G32:R32").value
+    ws_xml.Range("BP10:CA10").value = ws.Range("G32:R32").value
     'Current
-    ws_xml.Range("H10:S10").Value = ws.Range("G33:R33").Value
-    ws_xml.Range("T10:AE10").Value = ws.Range("G33:R33").Value
-    ws_xml.Range("AF10:AQ10").Value = ws.Range("G33:R33").Value
+    ws_xml.Range("H10:S10").value = ws.Range("G33:R33").value
+    ws_xml.Range("T10:AE10").value = ws.Range("G33:R33").value
+    ws_xml.Range("AF10:AQ10").value = ws.Range("G33:R33").value
     'RegNumber
-    ws_xml.Range("CC10").Value = ws.Range("V33").Value
+    ws_xml.Range("CC10").value = ws.Range("V33").value
     'Values
-    ws_xml.Range("E10").Value = ws.Range("D33").Value
-    ws_xml.Range("F10").Value = ws.Range("E33").Value
-    ws_xml.Range("G10").Value = ws.Range("F33").Value
+    ws_xml.Range("E10").value = ws.Range("D33").value
+    ws_xml.Range("F10").value = ws.Range("E33").value
+    ws_xml.Range("G10").value = ws.Range("F33").value
     'KBK
-    ws_xml.Range("A10").Value = ws.Range("A49").Value
+    ws_xml.Range("A10").value = ws.Range("A49").value
     'NAME
-    ws_xml.Range("B10").Value = ws.Range("A28").Value
+    ws_xml.Range("B10").value = ws.Range("A28").value
     '4
     'Plan
-    ws_xml.Range("AR11:BC11").Value = ws.Range("G36:R36").Value
-    ws_xml.Range("BD11:BO11").Value = ws.Range("G36:R36").Value
-    ws_xml.Range("BP11:CA11").Value = ws.Range("G36:R36").Value
+    ws_xml.Range("AR11:BC11").value = ws.Range("G36:R36").value
+    ws_xml.Range("BD11:BO11").value = ws.Range("G36:R36").value
+    ws_xml.Range("BP11:CA11").value = ws.Range("G36:R36").value
     'Current
-    ws_xml.Range("H11:S11").Value = ws.Range("G37:R37").Value
-    ws_xml.Range("T11:AE11").Value = ws.Range("G37:R37").Value
-    ws_xml.Range("AF11:AQ11").Value = ws.Range("G37:R37").Value
+    ws_xml.Range("H11:S11").value = ws.Range("G37:R37").value
+    ws_xml.Range("T11:AE11").value = ws.Range("G37:R37").value
+    ws_xml.Range("AF11:AQ11").value = ws.Range("G37:R37").value
     'RegNumber
-    ws_xml.Range("CC11").Value = ws.Range("V37").Value
+    ws_xml.Range("CC11").value = ws.Range("V37").value
     'Values
-    ws_xml.Range("E11:G11").Value = ws.Range("D37:F37").Value
+    ws_xml.Range("E11:G11").value = ws.Range("D37:F37").value
     'KBK
-    ws_xml.Range("A11").Value = ws.Range("A49").Value
+    ws_xml.Range("A11").value = ws.Range("A49").value
     'NAME
-    ws_xml.Range("B11").Value = ws.Range("A28").Value
+    ws_xml.Range("B11").value = ws.Range("A28").value
     '5
     'Plan
-    ws_xml.Range("AR12:BC12").Value = ws.Range("G38:R38").Value
-    ws_xml.Range("BD12:BO12").Value = ws.Range("G38:R38").Value
-    ws_xml.Range("BP12:CA12").Value = ws.Range("G38:R38").Value
+    ws_xml.Range("AR12:BC12").value = ws.Range("G38:R38").value
+    ws_xml.Range("BD12:BO12").value = ws.Range("G38:R38").value
+    ws_xml.Range("BP12:CA12").value = ws.Range("G38:R38").value
     'Current
-    ws_xml.Range("H12:S12").Value = ws.Range("G39:R39").Value
-    ws_xml.Range("T12:AE12").Value = ws.Range("G39:R39").Value
-    ws_xml.Range("AF12:AQ12").Value = ws.Range("G39:R39").Value
+    ws_xml.Range("H12:S12").value = ws.Range("G39:R39").value
+    ws_xml.Range("T12:AE12").value = ws.Range("G39:R39").value
+    ws_xml.Range("AF12:AQ12").value = ws.Range("G39:R39").value
     'RegNumber
-    ws_xml.Range("CC12").Value = ws.Range("V39").Value
+    ws_xml.Range("CC12").value = ws.Range("V39").value
     'Values
-    ws_xml.Range("E12:G12").Value = ws.Range("D39:F39").Value
+    ws_xml.Range("E12:G12").value = ws.Range("D39:F39").value
     'KBK
-    ws_xml.Range("A12").Value = ws.Range("A49").Value
+    ws_xml.Range("A12").value = ws.Range("A49").value
     'NAME
-    ws_xml.Range("B12").Value = ws.Range("A28").Value
+    ws_xml.Range("B12").value = ws.Range("A28").value
     '6
     'Plan
-    ws_xml.Range("AR13:BC13").Value = ws.Range("G44:R44").Value
-    ws_xml.Range("BD13:BO13").Value = ws.Range("G44:R44").Value
-    ws_xml.Range("BP13:CA13").Value = ws.Range("G44:R44").Value
+    ws_xml.Range("AR13:BC13").value = ws.Range("G44:R44").value
+    ws_xml.Range("BD13:BO13").value = ws.Range("G44:R44").value
+    ws_xml.Range("BP13:CA13").value = ws.Range("G44:R44").value
     'Current
-    ws_xml.Range("H13:S13").Value = ws.Range("G45:R45").Value
-    ws_xml.Range("T13:AE13").Value = ws.Range("G45:R45").Value
-    ws_xml.Range("AF13:AQ13").Value = ws.Range("G45:R45").Value
+    ws_xml.Range("H13:S13").value = ws.Range("G45:R45").value
+    ws_xml.Range("T13:AE13").value = ws.Range("G45:R45").value
+    ws_xml.Range("AF13:AQ13").value = ws.Range("G45:R45").value
     'RegNumber
-    ws_xml.Range("CC13").Value = ws.Range("V45").Value
+    ws_xml.Range("CC13").value = ws.Range("V45").value
     'Values
-    ws_xml.Range("E13:G13").Value = ws.Range("D45:F45").Value
+    ws_xml.Range("E13:G13").value = ws.Range("D45:F45").value
     'KBK
-    ws_xml.Range("A13").Value = ws.Range("A49").Value
+    ws_xml.Range("A13").value = ws.Range("A49").value
     'NAME
-    ws_xml.Range("B13").Value = ws.Range("A28").Value
+    ws_xml.Range("B13").value = ws.Range("A28").value
     'Организация мероприятий по научно-методическому обеспечению спортивных сборных команд.
     '0000000001100077708  30042100100000000004100103
     '1
     'Plan
-    ws_xml.Range("AR14:BC14").Value = ws.Range("G59:R59").Value
-    ws_xml.Range("BD14:BO14").Value = ws.Range("G59:R59").Value
-    ws_xml.Range("BP14:CA14").Value = ws.Range("G59:R59").Value
+    ws_xml.Range("AR14:BC14").value = ws.Range("G59:R59").value
+    ws_xml.Range("BD14:BO14").value = ws.Range("G59:R59").value
+    ws_xml.Range("BP14:CA14").value = ws.Range("G59:R59").value
     'Current
-    ws_xml.Range("H14:S14").Value = ws.Range("G60:R60").Value
-    ws_xml.Range("T14:AE14").Value = ws.Range("G60:R60").Value
-    ws_xml.Range("AF14:AQ14").Value = ws.Range("G60:R60").Value
+    ws_xml.Range("H14:S14").value = ws.Range("G60:R60").value
+    ws_xml.Range("T14:AE14").value = ws.Range("G60:R60").value
+    ws_xml.Range("AF14:AQ14").value = ws.Range("G60:R60").value
     'RegNumber
-    ws_xml.Range("CC14").Value = ws.Range("V60").Value
+    ws_xml.Range("CC14").value = ws.Range("V60").value
     'Values
-    ws_xml.Range("E14:G14").Value = ws.Range("D60:F60").Value
+    ws_xml.Range("E14:G14").value = ws.Range("D60:F60").value
     'KBK
-    ws_xml.Range("A14").Value = ws.Range("A61").Value
+    ws_xml.Range("A14").value = ws.Range("A61").value
     'NAME
-    ws_xml.Range("B14").Value = ws.Range("A59").Value
+    ws_xml.Range("B14").value = ws.Range("A59").value
     'заполняем реквезиты 12 строк
     Call FillXMLTableFromServiceTable(wb, ws_xml, ws, 2, 14)
     
@@ -449,133 +449,133 @@ Sub FillXMLTableForUSM(nameSheet As String, wb As Workbook, ws_xml As Worksheet)
     'Международные на территории Российской Федерации
     '1
     'Plan
-    ws_xml.Range("AR15:BC15").Value = ws.Range("G7:R7").Value
-    ws_xml.Range("BD15:BO15").Value = ws.Range("G7:R7").Value
-    ws_xml.Range("BP15:CA15").Value = ws.Range("G7:R7").Value
+    ws_xml.Range("AR15:BC15").value = ws.Range("G7:R7").value
+    ws_xml.Range("BD15:BO15").value = ws.Range("G7:R7").value
+    ws_xml.Range("BP15:CA15").value = ws.Range("G7:R7").value
     'Current
-    ws_xml.Range("H15:S15").Value = ws.Range("G8:R8").Value
-    ws_xml.Range("T15:AE15").Value = ws.Range("G9:R9").Value
-    ws_xml.Range("AF15:AQ15").Value = ws.Range("G10:R10").Value
+    ws_xml.Range("H15:S15").value = ws.Range("G8:R8").value
+    ws_xml.Range("T15:AE15").value = ws.Range("G9:R9").value
+    ws_xml.Range("AF15:AQ15").value = ws.Range("G10:R10").value
     'RegNumber
-    ws_xml.Range("CC15").Value = ws.Range("X7").Value
+    ws_xml.Range("CC15").value = ws.Range("X7").value
     'Values
     'ws_xml.Range("E15:G15").Value = ws.Range("D8:F8").Value
-    ws_xml.Range("E15").Value = ws.Range("D8").Value
-    ws_xml.Range("F15").Value = ws.Range("E9").Value
-    ws_xml.Range("G15").Value = ws.Range("F10").Value
+    ws_xml.Range("E15").value = ws.Range("D8").value
+    ws_xml.Range("F15").value = ws.Range("E9").value
+    ws_xml.Range("G15").value = ws.Range("F10").value
     'KBK
-    ws_xml.Range("A15").Value = ws.Range("A23").Value
+    ws_xml.Range("A15").value = ws.Range("A23").value
     'NAME
-    ws_xml.Range("B15").Value = ws.Range("A7").Value
+    ws_xml.Range("B15").value = ws.Range("A7").value
     
     '2
     'Plan
-    ws_xml.Range("AR16:BC16").Value = ws.Range("G11:R11").Value
-    ws_xml.Range("BD16:BO16").Value = ws.Range("G11:R11").Value
-    ws_xml.Range("BP16:CA16").Value = ws.Range("G1:R11").Value
+    ws_xml.Range("AR16:BC16").value = ws.Range("G11:R11").value
+    ws_xml.Range("BD16:BO16").value = ws.Range("G11:R11").value
+    ws_xml.Range("BP16:CA16").value = ws.Range("G1:R11").value
     'Current
-    ws_xml.Range("H16:S16").Value = ws.Range("G12:R12").Value
-    ws_xml.Range("T16:AE16").Value = ws.Range("G12:R12").Value
-    ws_xml.Range("AF16:AQ16").Value = ws.Range("G12:R12").Value
+    ws_xml.Range("H16:S16").value = ws.Range("G12:R12").value
+    ws_xml.Range("T16:AE16").value = ws.Range("G12:R12").value
+    ws_xml.Range("AF16:AQ16").value = ws.Range("G12:R12").value
     'RegNumber
-    ws_xml.Range("CC16").Value = ws.Range("X12").Value
+    ws_xml.Range("CC16").value = ws.Range("X12").value
     'Values
-    ws_xml.Range("E16:G16").Value = ws.Range("D12:F12").Value
+    ws_xml.Range("E16:G16").value = ws.Range("D12:F12").value
     'ws_xml.Range("E16").Value = ws.Range("D8").Value
     'ws_xml.Range("F15").Value = ws.Range("E9").Value
     'ws_xml.Range("G15").Value = ws.Range("F10").Value
     'KBK
-    ws_xml.Range("A16").Value = ws.Range("A23").Value
+    ws_xml.Range("A16").value = ws.Range("A23").value
     'NAME
-    ws_xml.Range("B16").Value = ws.Range("A7").Value
+    ws_xml.Range("B16").value = ws.Range("A7").value
     
     '3
     'Plan
-    ws_xml.Range("AR17:BC17").Value = ws.Range("G13:R13").Value
-    ws_xml.Range("BD17:BO17").Value = ws.Range("G13:R13").Value
-    ws_xml.Range("BP17:CA17").Value = ws.Range("G13:R13").Value
+    ws_xml.Range("AR17:BC17").value = ws.Range("G13:R13").value
+    ws_xml.Range("BD17:BO17").value = ws.Range("G13:R13").value
+    ws_xml.Range("BP17:CA17").value = ws.Range("G13:R13").value
     'Current
-    ws_xml.Range("H17:S17").Value = ws.Range("G14:R14").Value
-    ws_xml.Range("T17:AE17").Value = ws.Range("G15:R15").Value
-    ws_xml.Range("AF17:AQ17").Value = ws.Range("G16:R16").Value
+    ws_xml.Range("H17:S17").value = ws.Range("G14:R14").value
+    ws_xml.Range("T17:AE17").value = ws.Range("G15:R15").value
+    ws_xml.Range("AF17:AQ17").value = ws.Range("G16:R16").value
     'RegNumber
-    ws_xml.Range("CC17").Value = ws.Range("X13").Value
+    ws_xml.Range("CC17").value = ws.Range("X13").value
     'Values
     'ws_xml.Range("E17:G17").Value = ws.Range("D12:F12").Value
-    ws_xml.Range("E17").Value = ws.Range("D14").Value
-    ws_xml.Range("F17").Value = ws.Range("E15").Value
-    ws_xml.Range("G17").Value = ws.Range("F16").Value
+    ws_xml.Range("E17").value = ws.Range("D14").value
+    ws_xml.Range("F17").value = ws.Range("E15").value
+    ws_xml.Range("G17").value = ws.Range("F16").value
     'KBK
-    ws_xml.Range("A17").Value = ws.Range("A23").Value
+    ws_xml.Range("A17").value = ws.Range("A23").value
     'NAME
-    ws_xml.Range("B17").Value = ws.Range("A7").Value
+    ws_xml.Range("B17").value = ws.Range("A7").value
 
     '4
     'Plan
-    ws_xml.Range("AR18:BC18").Value = ws.Range("G17:R17").Value
-    ws_xml.Range("BD18:BO18").Value = ws.Range("G17:R17").Value
-    ws_xml.Range("BP18:CA18").Value = ws.Range("G17:R17").Value
+    ws_xml.Range("AR18:BC18").value = ws.Range("G17:R17").value
+    ws_xml.Range("BD18:BO18").value = ws.Range("G17:R17").value
+    ws_xml.Range("BP18:CA18").value = ws.Range("G17:R17").value
     'Current
-    ws_xml.Range("H18:S18").Value = ws.Range("G18:R18").Value
-    ws_xml.Range("T18:AE18").Value = ws.Range("G18:R18").Value
-    ws_xml.Range("AF18:AQ18").Value = ws.Range("G18:R18").Value
+    ws_xml.Range("H18:S18").value = ws.Range("G18:R18").value
+    ws_xml.Range("T18:AE18").value = ws.Range("G18:R18").value
+    ws_xml.Range("AF18:AQ18").value = ws.Range("G18:R18").value
     'RegNumber
-    ws_xml.Range("CC18").Value = ws.Range("X18").Value
+    ws_xml.Range("CC18").value = ws.Range("X18").value
     'Values
-    ws_xml.Range("E18:G18").Value = ws.Range("D18:F18").Value
+    ws_xml.Range("E18:G18").value = ws.Range("D18:F18").value
     'ws_xml.Range("E18").Value = ws.Range("D14").Value
     'ws_xml.Range("F18").Value = ws.Range("E15").Value
     'ws_xml.Range("G18").Value = ws.Range("F16").Value
     'KBK
-    ws_xml.Range("A18").Value = ws.Range("A23").Value
+    ws_xml.Range("A18").value = ws.Range("A23").value
     'NAME
-    ws_xml.Range("B18").Value = ws.Range("A7").Value
+    ws_xml.Range("B18").value = ws.Range("A7").value
     
     'Работа 2. Организация и проведение официальных спортивных мероприятий.
     '
     '1
     'Plan
-    ws_xml.Range("AR19:BC19").Value = ws.Range("G32:R32").Value
-    ws_xml.Range("BD19:BO19").Value = ws.Range("G32:R32").Value
-    ws_xml.Range("BP19:CA19").Value = ws.Range("G32:R32").Value
+    ws_xml.Range("AR19:BC19").value = ws.Range("G32:R32").value
+    ws_xml.Range("BD19:BO19").value = ws.Range("G32:R32").value
+    ws_xml.Range("BP19:CA19").value = ws.Range("G32:R32").value
     'Current
-    ws_xml.Range("H19:S19").Value = ws.Range("G33:R33").Value
-    ws_xml.Range("T19:AE19").Value = ws.Range("G33:R33").Value
-    ws_xml.Range("AF19:AQ19").Value = ws.Range("G33:R33").Value
+    ws_xml.Range("H19:S19").value = ws.Range("G33:R33").value
+    ws_xml.Range("T19:AE19").value = ws.Range("G33:R33").value
+    ws_xml.Range("AF19:AQ19").value = ws.Range("G33:R33").value
     'RegNumber
-    ws_xml.Range("CC19").Value = ws.Range("X32").Value
+    ws_xml.Range("CC19").value = ws.Range("X32").value
     'Values
-    ws_xml.Range("E19:G19").Value = ws.Range("D33:F33").Value
+    ws_xml.Range("E19:G19").value = ws.Range("D33:F33").value
     'ws_xml.Range("E19").Value = ws.Range("D8").Value
     'ws_xml.Range("F19").Value = ws.Range("E9").Value
     'ws_xml.Range("G19").Value = ws.Range("F10").Value
     'KBK
-    ws_xml.Range("A19").Value = ws.Range("A35").Value
+    ws_xml.Range("A19").value = ws.Range("A35").value
     'NAME
-    ws_xml.Range("B19").Value = ws.Range("A32").Value
+    ws_xml.Range("B19").value = ws.Range("A32").value
     
     'Работа 2. Организация и проведение официальных спортивных мероприятий.
     '
     '1
     'Plan
-    ws_xml.Range("AR20:BC20").Value = ws.Range("G42:R42").Value
-    ws_xml.Range("BD20:BO20").Value = ws.Range("G42:R42").Value
-    ws_xml.Range("BP20:CA20").Value = ws.Range("G42:R42").Value
+    ws_xml.Range("AR20:BC20").value = ws.Range("G42:R42").value
+    ws_xml.Range("BD20:BO20").value = ws.Range("G42:R42").value
+    ws_xml.Range("BP20:CA20").value = ws.Range("G42:R42").value
     'Current
-    ws_xml.Range("H20:S20").Value = ws.Range("G43:R43").Value
-    ws_xml.Range("T20:AE20").Value = ws.Range("G43:R43").Value
-    ws_xml.Range("AF20:AQ20").Value = ws.Range("G43:R43").Value
+    ws_xml.Range("H20:S20").value = ws.Range("G43:R43").value
+    ws_xml.Range("T20:AE20").value = ws.Range("G43:R43").value
+    ws_xml.Range("AF20:AQ20").value = ws.Range("G43:R43").value
     'RegNumber
-    ws_xml.Range("CC20").Value = ws.Range("X42").Value
+    ws_xml.Range("CC20").value = ws.Range("X42").value
     'Values
-    ws_xml.Range("E20:G20").Value = ws.Range("D43:F43").Value
+    ws_xml.Range("E20:G20").value = ws.Range("D43:F43").value
     'ws_xml.Range("E19").Value = ws.Range("D8").Value
     'ws_xml.Range("F19").Value = ws.Range("E9").Value
     'ws_xml.Range("G19").Value = ws.Range("F10").Value
     'KBK
-    ws_xml.Range("A20").Value = ws.Range("A47").Value
+    ws_xml.Range("A20").value = ws.Range("A47").value
     'NAME
-    ws_xml.Range("B20").Value = ws.Range("A42").Value
+    ws_xml.Range("B20").value = ws.Range("A42").value
     
     'заполняем реквезиты 6 строк
     Call FillXMLTableFromServiceTable(wb, ws_xml, ws, 15, 20)
@@ -596,93 +596,93 @@ Sub FillXMLTableForFCPSR(nameSheet As String, wb As Workbook, ws_xml As Workshee
     '
     '1
     'Plan
-    ws_xml.Range("AR21:BC21").Value = ws.Range("G6:R6").Value
-    ws_xml.Range("BD21:BO21").Value = ws.Range("G6:R6").Value
-    ws_xml.Range("BP21:CA21").Value = ws.Range("G6:R6").Value
+    ws_xml.Range("AR21:BC21").value = ws.Range("G6:R6").value
+    ws_xml.Range("BD21:BO21").value = ws.Range("G6:R6").value
+    ws_xml.Range("BP21:CA21").value = ws.Range("G6:R6").value
     'Current
-    ws_xml.Range("H21:S21").Value = ws.Range("G7:R7").Value
-    ws_xml.Range("T21:AE21").Value = ws.Range("G7:R7").Value
-    ws_xml.Range("AF21:AQ21").Value = ws.Range("G7:R7").Value
+    ws_xml.Range("H21:S21").value = ws.Range("G7:R7").value
+    ws_xml.Range("T21:AE21").value = ws.Range("G7:R7").value
+    ws_xml.Range("AF21:AQ21").value = ws.Range("G7:R7").value
     'RegNumber
-    ws_xml.Range("CC21").Value = ws.Range("V6").Value
+    ws_xml.Range("CC21").value = ws.Range("V6").value
     'Values
-    ws_xml.Range("E21:G21").Value = ws.Range("D7:F7").Value
+    ws_xml.Range("E21:G21").value = ws.Range("D7:F7").value
     'ws_xml.Range("E21").Value = ws.Range("D8").Value
     'ws_xml.Range("F21").Value = ws.Range("E9").Value
     'ws_xml.Range("G21").Value = ws.Range("F10").Value
     'KBK
-    ws_xml.Range("A21").Value = ws.Range("A13").Value
+    ws_xml.Range("A21").value = ws.Range("A13").value
     'NAME
-    ws_xml.Range("B21").Value = ws.Range("A6").Value
+    ws_xml.Range("B21").value = ws.Range("A6").value
     
     'Организация и проведение официальных спортивных мероприятий.
     '
     '1
     'Plan
-    ws_xml.Range("AR22:BC22").Value = ws.Range("G8:R8").Value
-    ws_xml.Range("BD22:BO22").Value = ws.Range("G8:R8").Value
-    ws_xml.Range("BP22:CA22").Value = ws.Range("G8:R8").Value
+    ws_xml.Range("AR22:BC22").value = ws.Range("G8:R8").value
+    ws_xml.Range("BD22:BO22").value = ws.Range("G8:R8").value
+    ws_xml.Range("BP22:CA22").value = ws.Range("G8:R8").value
     'Current
-    ws_xml.Range("H22:S22").Value = ws.Range("G9:R9").Value
-    ws_xml.Range("T22:AE22").Value = ws.Range("G9:R9").Value
-    ws_xml.Range("AF22:AQ22").Value = ws.Range("G9:R9").Value
+    ws_xml.Range("H22:S22").value = ws.Range("G9:R9").value
+    ws_xml.Range("T22:AE22").value = ws.Range("G9:R9").value
+    ws_xml.Range("AF22:AQ22").value = ws.Range("G9:R9").value
     'RegNumber
-    ws_xml.Range("CC22").Value = ws.Range("V8").Value
+    ws_xml.Range("CC22").value = ws.Range("V8").value
     'Values
-    ws_xml.Range("E22:G22").Value = ws.Range("D7:F7").Value
+    ws_xml.Range("E22:G22").value = ws.Range("D7:F7").value
     'ws_xml.Range("E22").Value = ws.Range("D8").Value
     'ws_xml.Range("F22").Value = ws.Range("E9").Value
     'ws_xml.Range("G22").Value = ws.Range("F10").Value
     'KBK
-    ws_xml.Range("A22").Value = ws.Range("A13").Value
+    ws_xml.Range("A22").value = ws.Range("A13").value
     'NAME
-    ws_xml.Range("B22").Value = ws.Range("A6").Value
+    ws_xml.Range("B22").value = ws.Range("A6").value
     
     'Организация и обеспечение экспериментальной и инновационной деятельности в области физкультуры и спорта.
     '
     '1
     'Plan
-    ws_xml.Range("AR23:BC23").Value = ws.Range("G10:R10").Value
-    ws_xml.Range("BD23:BO23").Value = ws.Range("G10:R10").Value
-    ws_xml.Range("BP23:CA23").Value = ws.Range("G10:R10").Value
+    ws_xml.Range("AR23:BC23").value = ws.Range("G10:R10").value
+    ws_xml.Range("BD23:BO23").value = ws.Range("G10:R10").value
+    ws_xml.Range("BP23:CA23").value = ws.Range("G10:R10").value
     'Current
-    ws_xml.Range("H23:S23").Value = ws.Range("G11:R11").Value
-    ws_xml.Range("T23:AE23").Value = ws.Range("G11:R11").Value
-    ws_xml.Range("AF23:AQ23").Value = ws.Range("G11:R11").Value
+    ws_xml.Range("H23:S23").value = ws.Range("G11:R11").value
+    ws_xml.Range("T23:AE23").value = ws.Range("G11:R11").value
+    ws_xml.Range("AF23:AQ23").value = ws.Range("G11:R11").value
     'RegNumber
-    ws_xml.Range("CC23").Value = ws.Range("V10").Value
+    ws_xml.Range("CC23").value = ws.Range("V10").value
     'Values
-    ws_xml.Range("E23:G23").Value = ws.Range("D11:F11").Value
+    ws_xml.Range("E23:G23").value = ws.Range("D11:F11").value
     'ws_xml.Range("E23").Value = ws.Range("D8").Value
     'ws_xml.Range("F23").Value = ws.Range("E9").Value
     'ws_xml.Range("G23").Value = ws.Range("F10").Value
     'KBK
-    ws_xml.Range("A23").Value = ws.Range("A13").Value
+    ws_xml.Range("A23").value = ws.Range("A13").value
     'NAME
-    ws_xml.Range("B23").Value = ws.Range("A6").Value
+    ws_xml.Range("B23").value = ws.Range("A6").value
     
     'Работа 4. Организация и проведение официальных физкультурных (физкультурно-оздоровительных) мероприятий.
     '
     '1
     'Plan
-    ws_xml.Range("AR24:BC24").Value = ws.Range("G20:R20").Value
-    ws_xml.Range("BD24:BO24").Value = ws.Range("G20:R20").Value
-    ws_xml.Range("BP24:CA24").Value = ws.Range("G20:R20").Value
+    ws_xml.Range("AR24:BC24").value = ws.Range("G20:R20").value
+    ws_xml.Range("BD24:BO24").value = ws.Range("G20:R20").value
+    ws_xml.Range("BP24:CA24").value = ws.Range("G20:R20").value
     'Current
-    ws_xml.Range("H24:S24").Value = ws.Range("G21:R21").Value
-    ws_xml.Range("T24:AE24").Value = ws.Range("G21:R21").Value
-    ws_xml.Range("AF24:AQ24").Value = ws.Range("G21:R21").Value
+    ws_xml.Range("H24:S24").value = ws.Range("G21:R21").value
+    ws_xml.Range("T24:AE24").value = ws.Range("G21:R21").value
+    ws_xml.Range("AF24:AQ24").value = ws.Range("G21:R21").value
     'RegNumber
-    ws_xml.Range("CC24").Value = ws.Range("V20").Value
+    ws_xml.Range("CC24").value = ws.Range("V20").value
     'Values
-    ws_xml.Range("E24:G24").Value = ws.Range("D21:F21").Value
+    ws_xml.Range("E24:G24").value = ws.Range("D21:F21").value
     'ws_xml.Range("E24").Value = ws.Range("D8").Value
     'ws_xml.Range("F24").Value = ws.Range("E9").Value
     'ws_xml.Range("G24").Value = ws.Range("F10").Value
     'KBK
-    ws_xml.Range("A24").Value = ws.Range("A23").Value
+    ws_xml.Range("A24").value = ws.Range("A23").value
     'NAME
-    ws_xml.Range("B24").Value = ws.Range("A20").Value
+    ws_xml.Range("B24").value = ws.Range("A20").value
     
     'заполняем реквезиты 6 строк
     Call FillXMLTableFromServiceTable(wb, ws_xml, ws, 21, 24)
@@ -703,24 +703,24 @@ Sub FillXMLTableForUGSPORT(nameSheet As String, wb As Workbook, ws_xml As Worksh
     '
     '1
     'Plan
-    ws_xml.Range("AR25:BC25").Value = ws.Range("G7:R7").Value
-    ws_xml.Range("BD25:BO25").Value = ws.Range("G7:R7").Value
-    ws_xml.Range("BP25:CA25").Value = ws.Range("G7:R7").Value
+    ws_xml.Range("AR25:BC25").value = ws.Range("G7:R7").value
+    ws_xml.Range("BD25:BO25").value = ws.Range("G7:R7").value
+    ws_xml.Range("BP25:CA25").value = ws.Range("G7:R7").value
     'Current
-    ws_xml.Range("H25:S25").Value = ws.Range("G8:R8").Value
-    ws_xml.Range("T25:AE25").Value = ws.Range("G8:R8").Value
-    ws_xml.Range("AF25:AQ25").Value = ws.Range("G8:R8").Value
+    ws_xml.Range("H25:S25").value = ws.Range("G8:R8").value
+    ws_xml.Range("T25:AE25").value = ws.Range("G8:R8").value
+    ws_xml.Range("AF25:AQ25").value = ws.Range("G8:R8").value
     'RegNumber
-    ws_xml.Range("CC25").Value = ws.Range("V7").Value
+    ws_xml.Range("CC25").value = ws.Range("V7").value
     'Values
     'ws_xml.Range("E25:G25").Value = ws.Range("D7:F7").Value
-    ws_xml.Range("E25").Value = ws.Range("D8").Value
-    ws_xml.Range("F25").Value = ws.Range("E9").Value
-    ws_xml.Range("G25").Value = ws.Range("F10").Value
+    ws_xml.Range("E25").value = ws.Range("D8").value
+    ws_xml.Range("F25").value = ws.Range("E9").value
+    ws_xml.Range("G25").value = ws.Range("F10").value
     'KBK
-    ws_xml.Range("A25").Value = ws.Range("A12").Value
+    ws_xml.Range("A25").value = ws.Range("A12").value
     'NAME
-    ws_xml.Range("B25").Value = ws.Range("A7").Value
+    ws_xml.Range("B25").value = ws.Range("A7").value
     
     
     'заполняем реквезиты 6 строк
@@ -742,24 +742,24 @@ Sub FillXMLTableForOZEROKRUG(nameSheet As String, wb As Workbook, ws_xml As Work
     '
     '1
     'Plan
-    ws_xml.Range("AR26:BC26").Value = ws.Range("G7:R7").Value
-    ws_xml.Range("BD26:BO26").Value = ws.Range("G7:R7").Value
-    ws_xml.Range("BP26:CA26").Value = ws.Range("G7:R7").Value
+    ws_xml.Range("AR26:BC26").value = ws.Range("G7:R7").value
+    ws_xml.Range("BD26:BO26").value = ws.Range("G7:R7").value
+    ws_xml.Range("BP26:CA26").value = ws.Range("G7:R7").value
     'Current
-    ws_xml.Range("H26:S26").Value = ws.Range("G8:R8").Value
-    ws_xml.Range("T26:AE26").Value = ws.Range("G8:R8").Value
-    ws_xml.Range("AF26:AQ26").Value = ws.Range("G8:R8").Value
+    ws_xml.Range("H26:S26").value = ws.Range("G8:R8").value
+    ws_xml.Range("T26:AE26").value = ws.Range("G8:R8").value
+    ws_xml.Range("AF26:AQ26").value = ws.Range("G8:R8").value
     'RegNumber
-    ws_xml.Range("CC26").Value = ws.Range("V7").Value
+    ws_xml.Range("CC26").value = ws.Range("V7").value
     'Values
     'ws_xml.Range("E26:G26").Value = ws.Range("D7:F7").Value
-    ws_xml.Range("E26").Value = ws.Range("D8").Value
-    ws_xml.Range("F26").Value = ws.Range("E9").Value
-    ws_xml.Range("G26").Value = ws.Range("F10").Value
+    ws_xml.Range("E26").value = ws.Range("D8").value
+    ws_xml.Range("F26").value = ws.Range("E9").value
+    ws_xml.Range("G26").value = ws.Range("F10").value
     'KBK
-    ws_xml.Range("A26").Value = ws.Range("A12").Value
+    ws_xml.Range("A26").value = ws.Range("A12").value
     'NAME
-    ws_xml.Range("B26").Value = ws.Range("A7").Value
+    ws_xml.Range("B26").value = ws.Range("A7").value
     
     
     'заполняем реквезиты 6 строк
@@ -781,24 +781,24 @@ Sub FillXMLTableForNOVOGORSK(nameSheet As String, wb As Workbook, ws_xml As Work
     '
     '1
     'Plan
-    ws_xml.Range("AR27:BC27").Value = ws.Range("G7:R7").Value
-    ws_xml.Range("BD27:BO27").Value = ws.Range("G7:R7").Value
-    ws_xml.Range("BP27:CA27").Value = ws.Range("G7:R7").Value
+    ws_xml.Range("AR27:BC27").value = ws.Range("G7:R7").value
+    ws_xml.Range("BD27:BO27").value = ws.Range("G7:R7").value
+    ws_xml.Range("BP27:CA27").value = ws.Range("G7:R7").value
     'Current
-    ws_xml.Range("H27:S27").Value = ws.Range("G8:R8").Value
-    ws_xml.Range("T27:AE27").Value = ws.Range("G8:R8").Value
-    ws_xml.Range("AF27:AQ27").Value = ws.Range("G8:R8").Value
+    ws_xml.Range("H27:S27").value = ws.Range("G8:R8").value
+    ws_xml.Range("T27:AE27").value = ws.Range("G8:R8").value
+    ws_xml.Range("AF27:AQ27").value = ws.Range("G8:R8").value
     'RegNumber
-    ws_xml.Range("CC27").Value = ws.Range("V7").Value
+    ws_xml.Range("CC27").value = ws.Range("V7").value
     'Values
     'ws_xml.Range("E27:G27").Value = ws.Range("D7:F7").Value
-    ws_xml.Range("E27").Value = ws.Range("D8").Value
-    ws_xml.Range("F27").Value = ws.Range("E9").Value
-    ws_xml.Range("G27").Value = ws.Range("F10").Value
+    ws_xml.Range("E27").value = ws.Range("D8").value
+    ws_xml.Range("F27").value = ws.Range("E9").value
+    ws_xml.Range("G27").value = ws.Range("F10").value
     'KBK
-    ws_xml.Range("A27").Value = ws.Range("A12").Value
+    ws_xml.Range("A27").value = ws.Range("A12").value
     'NAME
-    ws_xml.Range("B27").Value = ws.Range("A7").Value
+    ws_xml.Range("B27").value = ws.Range("A7").value
     
     
     'заполняем реквезиты 6 строк
@@ -821,24 +821,24 @@ Sub FillXMLTableForOKA(nameSheet As String, wb As Workbook, ws_xml As Worksheet)
     '
     '1
     'Plan
-    ws_xml.Range("AR28:BC28").Value = ws.Range("G7:R7").Value
-    ws_xml.Range("BD28:BO28").Value = ws.Range("G7:R7").Value
-    ws_xml.Range("BP28:CA28").Value = ws.Range("G7:R7").Value
+    ws_xml.Range("AR28:BC28").value = ws.Range("G7:R7").value
+    ws_xml.Range("BD28:BO28").value = ws.Range("G7:R7").value
+    ws_xml.Range("BP28:CA28").value = ws.Range("G7:R7").value
     'Current
-    ws_xml.Range("H28:S28").Value = ws.Range("G8:R8").Value
-    ws_xml.Range("T28:AE28").Value = ws.Range("G8:R8").Value
-    ws_xml.Range("AF28:AQ28").Value = ws.Range("G8:R8").Value
+    ws_xml.Range("H28:S28").value = ws.Range("G8:R8").value
+    ws_xml.Range("T28:AE28").value = ws.Range("G8:R8").value
+    ws_xml.Range("AF28:AQ28").value = ws.Range("G8:R8").value
     'RegNumber
-    ws_xml.Range("CC28").Value = ws.Range("V7").Value
+    ws_xml.Range("CC28").value = ws.Range("V7").value
     'Values
     'ws_xml.Range("E27:G27").Value = ws.Range("D7:F7").Value
-    ws_xml.Range("E28").Value = ws.Range("D8").Value
-    ws_xml.Range("F28").Value = ws.Range("E9").Value
-    ws_xml.Range("G28").Value = ws.Range("F10").Value
+    ws_xml.Range("E28").value = ws.Range("D8").value
+    ws_xml.Range("F28").value = ws.Range("E9").value
+    ws_xml.Range("G28").value = ws.Range("F10").value
     'KBK
-    ws_xml.Range("A28").Value = ws.Range("A12").Value
+    ws_xml.Range("A28").value = ws.Range("A12").value
     'NAME
-    ws_xml.Range("B28").Value = ws.Range("A7").Value
+    ws_xml.Range("B28").value = ws.Range("A7").value
     
     
     'заполняем реквезиты 6 строк
@@ -860,24 +860,24 @@ Sub FillXMLTableForKRIM(nameSheet As String, wb As Workbook, ws_xml As Worksheet
     '
     '1
     'Plan
-    ws_xml.Range("AR29:BC29").Value = ws.Range("G7:R7").Value
-    ws_xml.Range("BD29:BO29").Value = ws.Range("G7:R7").Value
-    ws_xml.Range("BP29:CA29").Value = ws.Range("G7:R7").Value
+    ws_xml.Range("AR29:BC29").value = ws.Range("G7:R7").value
+    ws_xml.Range("BD29:BO29").value = ws.Range("G7:R7").value
+    ws_xml.Range("BP29:CA29").value = ws.Range("G7:R7").value
     'Current
-    ws_xml.Range("H29:S29").Value = ws.Range("G8:R8").Value
-    ws_xml.Range("T29:AE29").Value = ws.Range("G8:R8").Value
-    ws_xml.Range("AF29:AQ29").Value = ws.Range("G8:R8").Value
+    ws_xml.Range("H29:S29").value = ws.Range("G8:R8").value
+    ws_xml.Range("T29:AE29").value = ws.Range("G8:R8").value
+    ws_xml.Range("AF29:AQ29").value = ws.Range("G8:R8").value
     'RegNumber
-    ws_xml.Range("CC29").Value = ws.Range("V7").Value
+    ws_xml.Range("CC29").value = ws.Range("V7").value
     'Values
     'ws_xml.Range("E29:G29").Value = ws.Range("D7:F7").Value
-    ws_xml.Range("E29").Value = ws.Range("D8").Value
-    ws_xml.Range("F29").Value = ws.Range("E9").Value
-    ws_xml.Range("G29").Value = ws.Range("F10").Value
+    ws_xml.Range("E29").value = ws.Range("D8").value
+    ws_xml.Range("F29").value = ws.Range("E9").value
+    ws_xml.Range("G29").value = ws.Range("F10").value
     'KBK
-    ws_xml.Range("A29").Value = ws.Range("A12").Value
+    ws_xml.Range("A29").value = ws.Range("A12").value
     'NAME
-    ws_xml.Range("B29").Value = ws.Range("A7").Value
+    ws_xml.Range("B29").value = ws.Range("A7").value
     
     
     'заполняем реквезиты 6 строк
@@ -891,7 +891,7 @@ Sub WriteXMLFile(ws_xml As Worksheet, wb As Workbook)
     Call WriteXMLFileForOFO(ws_xml, wb)
 End Sub
 Sub WriteXMLFileForNormativ(ws_xml As Worksheet, wb As Workbook)
-    
+
     Dim SortRange As String
     SortRange = ws_xml.Cells(Cells.Rows.Count, "B").End(xlUp).Row
     With ws_xml.Sort
@@ -919,10 +919,21 @@ Sub WriteXMLFileForNormativ(ws_xml As Worksheet, wb As Workbook)
     okei_code_prev = ""
     ind_name_prev = ""
     kbk_prev = ""
+    
+    Dim normativi_folder_path As String
+    normativi_folder_path = wb.path + "\Нормативы"
+    
+    If Dir(normativi_folder_path, vbDirectory) <> "" Then 'проверяем есть ли папка "имя папки"
+    
+    Else
+        MkDir (normativi_folder_path) 'создаём папку "имя папки"
+    End If
+    
+    
     For Each rw In ws_xml.Rows
 
         If RowCount > 0 Then
-            base_name_cur = CStr(rw.Cells(1, 2).Value)
+            base_name_cur = CStr(rw.Cells(1, 2).value)
             okei_code_cur = CStr(Format(rw.Cells(1, 85), "000"))
             base_code_cur = CStr(rw.Cells(1, 84))
             ind_name_cur = CStr(rw.Cells(1, 82))
@@ -933,7 +944,8 @@ Sub WriteXMLFileForNormativ(ws_xml As Worksheet, wb As Workbook)
                             CountNormativ = CountNormativ + 1
                             Dim path_xml As String
                             'path_xml = CStr(GetFilePath(wb.path, wb.Name, CStr(CountNormativ) & " Нормативы", CStr(base_name_prev)))
-                            path_xml = CStr(GetFilePath(wb.path, wb.name, CStr(CountNormativ) & "_Нормативы", CStr(base_code_prev) & "_" & CStr(ind_name_prev)))
+                            'path_xml = CStr(GetFilePath(wb.path, wb.name, CStr(CountNormativ) & "_Нормативы", CStr(base_code_prev) & "_" & CStr(ind_name_prev)))
+                            path_xml = CStr(GetFilePath(normativi_folder_path, wb.name, CStr(CountNormativ) & "_Нормативы", CStr(base_code_prev) & "_" & CStr(ind_name_prev)))
                             XDoc.Save path_xml
                         End If
                         If base_name_cur = "" Then
@@ -942,7 +954,7 @@ Sub WriteXMLFileForNormativ(ws_xml As Worksheet, wb As Workbook)
                         Set XDoc = CreateObject("MSXML2.DOMDocument")
                         XDoc.appendChild XDoc.createProcessingInstruction("xml", "version='1.0' encoding='windows-1251'")
                         isTheSame = False
-                        If ws_xml.Cells(rw.Row, 1).Value Then
+                        If ws_xml.Cells(rw.Row, 1).value <> "" Then
                             base_name_prev = base_name_cur
                             okei_code_prev = okei_code_cur
                             base_code_prev = base_code_cur
@@ -957,7 +969,7 @@ Sub WriteXMLFileForNormativ(ws_xml As Worksheet, wb As Workbook)
                 strRegNumber = RemoveWhiteSpace(CStr(rw.Cells(1, 81)))
                 
                 isGood = True
-                If strRegNumber = "" Then
+                If strRegNumber = "" Or kbk_cur = "0" Then
                     isGood = False
                 End If
                 If isGood Then
@@ -1241,11 +1253,7 @@ Sub WriteXMLFileForNormativ(ws_xml As Worksheet, wb As Workbook)
         RowCount = RowCount + 1
     Next rw
     
-    
-'    Dim rel As Object
-'    Set rel = XDoc.createAttribute("Attrib")
-'    rel.NodeValue = "Attrib value"
-'    elem.setAttributeNode rel
+    'Call PackArchive(normativi_folder_path, wb.path, "Нормативы")
         
     
 End Sub
@@ -1307,26 +1315,26 @@ Sub WriteXMLFileForOFO(ws_xml As Worksheet, wb As Workbook)
     For Each rw In ws_xml.Rows
         If RowCount > 0 Then
 
-            If CStr(ws_xml.Cells(rw.Row, 1).Value) = "" Then
+            If CStr(ws_xml.Cells(rw.Row, 1).value) = "" Then
                 If RowCount > 1 Then
                     Dim path_xml As String
                     'path_xml = CStr(GetFilePath(wb.path, wb.Name, CStr(CountNormativ) & " Нормативы", CStr(base_name_prev)))
                     path_xml = CStr(GetFilePath(wb.path, wb.name, "0" & "_ОФО", "" & "" & ""))
                     XDoc.Save path_xml
                 End If
-                If CStr(ws_xml.Cells(rw.Row, 1).Value) = "" Then
+                If CStr(ws_xml.Cells(rw.Row, 1).value) = "" Then
                     Exit For
                 End If
 
             End If
             
-            dep_name_cur = CStr(rw.Cells(1, 3).Value)
+            dep_name_cur = CStr(rw.Cells(1, 3).value)
             okei_code_cur = CStr(Format(rw.Cells(1, 85), "000"))
             base_code_cur = CStr(rw.Cells(1, 84))
             ind_name_cur = CStr(rw.Cells(1, 82))
             If dep_name_cur <> dep_name_prev Then
                 isTheSame = False
-                If ws_xml.Cells(rw.Row, 1).Value <> "" Then
+                If ws_xml.Cells(rw.Row, 1).value <> "" Then
                     dep_name_prev = dep_name_cur
                     okei_code_prev = okei_code_cur
                     base_code_prev = base_code_cur
@@ -1430,11 +1438,11 @@ Public Function FindNameOKEI(code As String, wb As Workbook) As String
     Dim name As String
     name = ""
     For Each rw In ws.Rows
-        If Trim(CStr(rw.Cells(1, 2).Value)) = Trim(CStr(code)) Then
-            name = CStr(rw.Cells(1, 1).Value)
+        If Trim(CStr(rw.Cells(1, 2).value)) = Trim(CStr(code)) Then
+            name = CStr(rw.Cells(1, 1).value)
             Exit For
         End If
-        If CStr(rw.Cells(1, 1).Value) = "" Then
+        If CStr(rw.Cells(1, 1).value) = "" Then
             Exit For
         End If
     Next rw
@@ -1443,54 +1451,86 @@ Public Function FindNameOKEI(code As String, wb As Workbook) As String
 End Function
 Public Function RemoveWhiteSpace(target As String) As String
     RemoveWhiteSpace = Replace(target, " ", "")
-'    With New RegExp
-'        .Pattern = "\s"
-'        .MultiLine = True
-'        .Global = True
-'        RemoveWhiteSpace = .Replace(target, vbNullString)
-'    End With
 End Function
-Public Function GetFilePath(folder_path, Filename, TagStart, TagEnd As String) As String
-
-    If InStr(Filename, ".") > 0 Then
-        Filename = Left(Filename, InStr(Filename, ".") - 1)
+Public Function GetValueWithZero(value As String) As String
+    value = CStr(value)
+    value = RemoveWhiteSpace(value)
+    If value = "" Then
+        GetValueWithZero = 0
+        Exit Function
     End If
-    GetFilePath = folder_path & "\" & TagStart & "_" & Filename & "_" & TagEnd & ".xml"
+    GetValueWithZero = value
+
+End Function
+Public Function GetFilePath(folder_path, FileName, TagStart, TagEnd As String) As String
+
+    If InStr(FileName, ".") > 0 Then
+        FileName = Left(FileName, InStr(FileName, ".") - 1)
+    End If
+    GetFilePath = folder_path & "\" & TagStart & "_" & FileName & "_" & TagEnd & ".xml"
     
 End Function
 Function getStringBeforeSpace(inputString, inputChar As String)
-    Dim index As Integer
-    index = InStr(1, inputString, inputChar) - 1
-    If index > 0 Then
-        getStringBeforeSpace = Mid(inputString, 1, index)
+    Dim Index As Integer
+    Index = InStr(1, inputString, inputChar) - 1
+    If Index > 0 Then
+        getStringBeforeSpace = Mid(inputString, 1, Index)
     Else
         getStringBeforeSpace = inputString
     End If
+End Function
+Public Function FindOrg(shortName As String, wb As Workbook, StartRowCountS, EndRowCount As Integer) As String()
+    Dim ws As Worksheet
+    Set ws = wb.Sheets("Учр")
+    Dim returnVal(3) As String
+    Index = 0
+    For i = StartRowCountS To EndRowCount
+        If UCase(Trim(CStr(ws.Cells(i, 7).value))) = UCase(Trim(CStr(shortName))) Then
+            Index = i
+            Exit For
+        End If
+        If CStr(ws.Cells(i, 3).value) = "" Then
+            Exit For
+        End If
+    Next i
+    If Index > 0 Then
+        returnVal(0) = CStr(ws.Cells(Index, 3).value)
+        returnVal(1) = CStr(ws.Cells(Index, 5).value)
+        returnVal(2) = CStr(ws.Cells(Index, 6).value)
+        returnVal(3) = CStr(ws.Cells(Index, 2).value)
+    Else
+        returnVal(0) = ""
+        returnVal(1) = ""
+        returnVal(2) = ""
+        returnVal(3) = ""
+    End If
+    FindOrg = returnVal
 End Function
 Public Function FindRegNumber(name As String, wb As Workbook, StartRowCountS, EndRowCount As Integer) As String()
     Dim ws As Worksheet
     Set ws = wb.Sheets("RegNumbers")
     Dim returnVal(9) As String
-    index = 0
+    Index = 0
     For i = StartRowCountS To EndRowCount
-        If UCase(Trim(CStr(ws.Cells(i, 2).Value))) = UCase(Trim(CStr(name))) Then
-            index = i
+        If UCase(Trim(CStr(ws.Cells(i, 2).value))) = UCase(Trim(CStr(name))) Then
+            Index = i
             Exit For
         End If
-        If CStr(ws.Cells(i, 2).Value) = "" Then
+        If CStr(ws.Cells(i, 2).value) = "" Then
             Exit For
         End If
     Next i
-    If index > 0 Then
-        returnVal(0) = CStr(ws.Cells(index, 1).Value)
-        returnVal(1) = CStr(ws.Cells(index, 2).Value)
-        returnVal(2) = CStr(ws.Cells(index, 3).Value)
-        returnVal(3) = CStr(ws.Cells(index, 4).Value)
-        returnVal(4) = CStr(ws.Cells(index, 5).Value)
-        returnVal(5) = CStr(ws.Cells(index, 6).Value)
-        returnVal(6) = CStr(ws.Cells(index, 7).Value)
-        returnVal(7) = CStr(ws.Cells(index, 8).Value)
-        returnVal(8) = CStr(ws.Cells(index, 9).Value)
+    If Index > 0 Then
+        returnVal(0) = CStr(ws.Cells(Index, 1).value)
+        returnVal(1) = CStr(ws.Cells(Index, 2).value)
+        returnVal(2) = CStr(ws.Cells(Index, 3).value)
+        returnVal(3) = CStr(ws.Cells(Index, 4).value)
+        returnVal(4) = CStr(ws.Cells(Index, 5).value)
+        returnVal(5) = CStr(ws.Cells(Index, 6).value)
+        returnVal(6) = CStr(ws.Cells(Index, 7).value)
+        returnVal(7) = CStr(ws.Cells(Index, 8).value)
+        returnVal(8) = CStr(ws.Cells(Index, 9).value)
+        returnVal(9) = CStr(ws.Cells(Index, 10).value)
     Else
         returnVal(0) = ""
         returnVal(1) = ""
@@ -1501,6 +1541,72 @@ Public Function FindRegNumber(name As String, wb As Workbook, StartRowCountS, En
         returnVal(6) = ""
         returnVal(7) = ""
         returnVal(8) = ""
+        returnVal(9) = ""
     End If
     FindRegNumber = returnVal
 End Function
+
+Private Sub PackArchive(path As String, newPath As String, name As String)
+    'Set ZIP = New Class1.ZipClass
+    'If (ZIP.CreateArchive(path)) Then  ' старый архив затирается
+    '    ZIP.CopyFolderToArchive newPath
+    'End If
+    Dim path_file_zip As String
+    path_file_zip = newPath + "\" + name + ".zip"
+    CreateArchive (path_file_zip)
+    
+    Dim FSO As Object
+    Dim SourceFolder As Object
+    Dim SubFolder As Object
+    Dim FileItem As Object
+    
+    Set FSO = CreateObject("Scripting.FileSystemObject")
+    Set SourceFolder = FSO.getfolder(path)
+    
+    For Each FileItem In SourceFolder.Files
+        Call CopyFileToArchiv(path_file_zip, FileItem.path)
+    Next FileItem
+    
+End Sub
+
+Function CreateArchive(ZipArchivePath) As Boolean
+    Dim Shell As Object
+    Dim FileSystemObject As Object
+    Dim ArchiveFolder As Object
+
+     Set Shell = CreateObject("Shell.Application")
+     Set FileSystemObject = CreateObject("Scripting.FileSystemObject")
+
+     ' Проверка наличия расширения zip в полном пути-имени файла
+     If UCase(FileSystemObject.GetExtensionName(ZipArchivePath)) <> "ZIP" Then
+          Exit Function
+          
+     End If
+     
+     ' Создание пустого zip архива
+    Dim ZipFileHeader As String
+    ZipFileHeader = "PK" & Chr(5) & Chr(6) & String(18, 0)
+    FileSystemObject.OpenTextFile(ZipArchivePath, 2, True).Write ZipFileHeader
+    Set ArchiveFolder = Shell.Namespace((ZipArchivePath))
+    ' проверка создания архива
+    If Not (ArchiveFolder Is Nothing) Then CreateArchive = True
+       
+End Function
+Sub CopyFileToArchiv(ZipName As String, FileName As String)
+    ' ZipName - полный путь к архиву
+    ' FileName - полный путь к архивируемому файлу
+    Dim ShellApp As Object
+    Dim DestFolder As Object
+
+     Set ShellApp = CreateObject("Shell.Application")
+     Set DestFolder = ShellApp.Namespace((ZipName))
+     ' копируемый выбранный файл в zip папку
+     DestFolder.CopyHere (FileName)
+     ' ожидаем окончание сжатия файла
+     Do Until DestFolder.Items.Count = 1
+          Sleep 100
+     Loop
+
+     Set ShellApp = Nothing
+
+End Sub
